@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this code or these results, please cite this repository."
+title: "WaveLM: a complex-valued byte-level language model and the ablation study of what drives it"
+authors:
+  - family-names: Lahtinen
+    given-names: Peter
+year: 2026
+url: "https://github.com/Peterpetu/WaveLM"
+license: MIT

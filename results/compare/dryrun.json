@@ -1,0 +1,708 @@
+{
+  "meta": {
+    "T": 512,
+    "batch": 32,
+    "ladder_steps": 5,
+    "sweep_steps": 5,
+    "wall_seconds": 3.0,
+    "targets": [
+      500000,
+      1200000,
+      3000000,
+      7000000
+    ],
+    "device": "cuda",
+    "started": "2026-05-23 18:18:52",
+    "best_lr": {
+      "wavelm": 0.0003,
+      "gpt": 0.003
+    },
+    "finished": "2026-05-23 18:23:15"
+  },
+  "sweep": [
+    {
+      "label": "sweep_wavelm_lr0.0001",
+      "arch": "wavelm",
+      "params_dof": 519907,
+      "steps_target": 5,
+      "steps_done": 5,
+      "batch": 32,
+      "T": 512,
+      "lr": 0.0001,
+      "seed": 0,
+      "tokens": 81920,
+      "val_bpb_final": 8.6079,
+      "val_bpb_best": 8.6079,
+      "wall_s": 2.6,
+      "tok_per_s": 31339.0,
+      "peak_gb": 3.94,
+      "history": [
+        [
+          5,
+          8.6079
+        ]
+      ],
+      "oom_retry": false
+    },
+    {
+      "label": "sweep_wavelm_lr0.0003",
+      "arch": "wavelm",
+      "params_dof": 519907,
+      "steps_target": 5,
+      "steps_done": 5,
+      "batch": 32,
+      "T": 512,
+      "lr": 0.0003,
+      "seed": 0,
+      "tokens": 81920,
+      "val_bpb_final": 7.7016,
+      "val_bpb_best": 7.7016,
+      "wall_s": 2.0,
+      "tok_per_s": 41823.0,
+      "peak_gb": 3.94,
+      "history": [
+        [
+          5,
+          7.7016
+        ]
+      ],
+      "oom_retry": false
+    },
+    {
+      "label": "sweep_wavelm_lr0.001",
+      "arch": "wavelm",
+      "params_dof": 519907,
+      "steps_target": 5,
+      "steps_done": 5,
+      "batch": 32,
+      "T": 512,
+      "lr": 0.001,
+      "seed": 0,
+      "tokens": 81920,
+      "val_bpb_final": 7.7204,
+      "val_bpb_best": 7.7204,
+      "wall_s": 2.0,
+      "tok_per_s": 41680.0,
+      "peak_gb": 3.94,
+      "history": [
+        [
+          5,
+          7.7204
+        ]
+      ],
+      "oom_retry": false
+    },
+    {
+      "label": "sweep_gpt_lr0.0003",
+      "arch": "gpt",
+      "params_dof": 492672,
+      "steps_target": 5,
+      "steps_done": 5,
+      "batch": 32,
+      "T": 512,
+      "lr": 0.0003,
+      "seed": 0,
+      "tokens": 81920,
+      "val_bpb_final": 6.6166,
+      "val_bpb_best": 6.6166,
+      "wall_s": 0.1,
+      "tok_per_s": 618278.0,
+      "peak_gb": 0.32,
+      "history": [
+        [
+          5,
+          6.6166
+        ]
+      ],
+      "oom_retry": false
+    },
+    {
+      "label": "sweep_gpt_lr0.001",
+      "arch": "gpt",
+      "params_dof": 492672,
+      "steps_target": 5,
+      "steps_done": 5,
+      "batch": 32,
+      "T": 512,
+      "lr": 0.001,
+      "seed": 0,
+      "tokens": 81920,
+      "val_bpb_final": 6.0351,
+      "val_bpb_best": 6.0351,
+      "wall_s": 0.1,
+      "tok_per_s": 702574.0,
+      "peak_gb": 0.32,
+      "history": [
+        [
+          5,
+          6.0351
+        ]
+      ],
+      "oom_retry": false
+    },
+    {
+      "label": "sweep_gpt_lr0.003",
+      "arch": "gpt",
+      "params_dof": 492672,
+      "steps_target": 5,
+      "steps_done": 5,
+      "batch": 32,
+      "T": 512,
+      "lr": 0.003,
+      "seed": 0,
+      "tokens": 81920,
+      "val_bpb_final": 5.1334,
+      "val_bpb_best": 5.1334,
+      "wall_s": 0.1,
+      "tok_per_s": 708985.0,
+      "peak_gb": 0.32,
+      "history": [
+        [
+          5,
+          5.1334
+        ]
+      ],
+      "oom_retry": false
+    }
+  ],
+  "ladder": [
+    {
+      "label": "ladder_wavelm_500000",
+      "arch": "wavelm",
+      "params_dof": 519907,
+      "steps_target": 5,
+      "steps_done": 5,
+      "batch": 32,
+      "T": 512,
+      "lr": 0.0003,
+      "seed": 0,
+      "tokens": 81920,
+      "val_bpb_final": 7.7016,
+      "val_bpb_best": 7.7016,
+      "wall_s": 2.0,
+      "tok_per_s": 41836.0,
+      "peak_gb": 3.94,
+      "history": [
+        [
+          5,
+          7.7016
+        ]
+      ],
+      "oom_retry": false
+    },
+    {
+      "label": "ladder_gpt_500000",
+      "arch": "gpt",
+      "params_dof": 492672,
+      "steps_target": 5,
+      "steps_done": 5,
+      "batch": 32,
+      "T": 512,
+      "lr": 0.003,
+      "seed": 0,
+      "tokens": 81920,
+      "val_bpb_final": 5.1334,
+      "val_bpb_best": 5.1334,
+      "wall_s": 0.1,
+      "tok_per_s": 706686.0,
+      "peak_gb": 0.32,
+      "history": [
+        [
+          5,
+          5.1334
+        ]
+      ],
+      "oom_retry": false
+    },
+    {
+      "label": "ladder_wavelm_1200000",
+      "arch": "wavelm",
+      "params_dof": 1116835,
+      "steps_target": 5,
+      "steps_done": 5,
+      "batch": 32,
+      "T": 512,
+      "lr": 0.0003,
+      "seed": 0,
+      "tokens": 81920,
+      "val_bpb_final": 7.6717,
+      "val_bpb_best": 7.6717,
+      "wall_s": 3.5,
+      "tok_per_s": 23199.0,
+      "peak_gb": 6.07,
+      "history": [
+        [
+          5,
+          7.6717
+        ]
+      ],
+      "oom_retry": false
+    },
+    {
+      "label": "ladder_gpt_1200000",
+      "arch": "gpt",
+      "params_dof": 1215744,
+      "steps_target": 5,
+      "steps_done": 5,
+      "batch": 32,
+      "T": 512,
+      "lr": 0.003,
+      "seed": 0,
+      "tokens": 81920,
+      "val_bpb_final": 6.1008,
+      "val_bpb_best": 6.1008,
+      "wall_s": 0.3,
+      "tok_per_s": 248746.0,
+      "peak_gb": 0.95,
+      "history": [
+        [
+          5,
+          6.1008
+        ]
+      ],
+      "oom_retry": false
+    },
+    {
+      "label": "ladder_wavelm_3000000",
+      "arch": "wavelm",
+      "params_dof": 2974243,
+      "steps_target": 5,
+      "steps_done": 5,
+      "batch": 32,
+      "T": 512,
+      "lr": 0.0003,
+      "seed": 0,
+      "tokens": 81920,
+      "val_bpb_final": 7.5891,
+      "val_bpb_best": 7.5891,
+      "wall_s": 6.3,
+      "tok_per_s": 12903.0,
+      "peak_gb": 10.35,
+      "history": [
+        [
+          5,
+          7.5891
+        ]
+      ],
+      "oom_retry": false
+    },
+    {
+      "label": "ladder_gpt_3000000",
+      "arch": "gpt",
+      "params_dof": 2989824,
+      "steps_target": 5,
+      "steps_done": 5,
+      "batch": 32,
+      "T": 512,
+      "lr": 0.003,
+      "seed": 0,
+      "tokens": 81920,
+      "val_bpb_final": 5.9467,
+      "val_bpb_best": 5.9467,
+      "wall_s": 0.8,
+      "tok_per_s": 105356.0,
+      "peak_gb": 2.24,
+      "history": [
+        [
+          5,
+          5.9467
+        ]
+      ],
+      "oom_retry": false
+    },
+    {
+      "label": "ladder_wavelm_7000000",
+      "arch": "wavelm",
+      "params_dof": 6827043,
+      "steps_target": 5,
+      "steps_done": 5,
+      "batch": 32,
+      "T": 512,
+      "lr": 0.0003,
+      "seed": 0,
+      "tokens": 81920,
+      "val_bpb_final": 7.016,
+      "val_bpb_best": 7.016,
+      "wall_s": 21.7,
+      "tok_per_s": 3768.0,
+      "peak_gb": 16.06,
+      "history": [
+        [
+          5,
+          7.016
+        ]
+      ],
+      "oom_retry": false
+    },
+    {
+      "label": "ladder_gpt_7000000",
+      "arch": "gpt",
+      "params_dof": 7139712,
+      "steps_target": 5,
+      "steps_done": 5,
+      "batch": 32,
+      "T": 512,
+      "lr": 0.003,
+      "seed": 0,
+      "tokens": 81920,
+      "val_bpb_final": 5.2131,
+      "val_bpb_best": 5.2131,
+      "wall_s": 5.4,
+      "tok_per_s": 15162.0,
+      "peak_gb": 3.58,
+      "history": [
+        [
+          5,
+          5.2131
+        ]
+      ],
+      "oom_retry": false
+    }
+  ],
+  "seeds": [
+    {
+      "label": "seed_wavelm_500000_s1",
+      "arch": "wavelm",
+      "params_dof": 519907,
+      "steps_target": 5,
+      "steps_done": 5,
+      "batch": 32,
+      "T": 512,
+      "lr": 0.0003,
+      "seed": 1,
+      "tokens": 81920,
+      "val_bpb_final": 7.6863,
+      "val_bpb_best": 7.6863,
+      "wall_s": 2.0,
+      "tok_per_s": 41569.0,
+      "peak_gb": 3.94,
+      "history": [
+        [
+          5,
+          7.6863
+        ]
+      ],
+      "oom_retry": false
+    },
+    {
+      "label": "seed_wavelm_500000_s2",
+      "arch": "wavelm",
+      "params_dof": 519907,
+      "steps_target": 5,
+      "steps_done": 5,
+      "batch": 32,
+      "T": 512,
+      "lr": 0.0003,
+      "seed": 2,
+      "tokens": 81920,
+      "val_bpb_final": 7.8686,
+      "val_bpb_best": 7.8686,
+      "wall_s": 2.0,
+      "tok_per_s": 41669.0,
+      "peak_gb": 3.94,
+      "history": [
+        [
+          5,
+          7.8686
+        ]
+      ],
+      "oom_retry": false
+    },
+    {
+      "label": "seed_gpt_500000_s1",
+      "arch": "gpt",
+      "params_dof": 492672,
+      "steps_target": 5,
+      "steps_done": 5,
+      "batch": 32,
+      "T": 512,
+      "lr": 0.003,
+      "seed": 1,
+      "tokens": 81920,
+      "val_bpb_final": 5.049,
+      "val_bpb_best": 5.049,
+      "wall_s": 0.1,
+      "tok_per_s": 700370.0,
+      "peak_gb": 0.32,
+      "history": [
+        [
+          5,
+          5.049
+        ]
+      ],
+      "oom_retry": false
+    },
+    {
+      "label": "seed_gpt_500000_s2",
+      "arch": "gpt",
+      "params_dof": 492672,
+      "steps_target": 5,
+      "steps_done": 5,
+      "batch": 32,
+      "T": 512,
+      "lr": 0.003,
+      "seed": 2,
+      "tokens": 81920,
+      "val_bpb_final": 5.1682,
+      "val_bpb_best": 5.1682,
+      "wall_s": 0.1,
+      "tok_per_s": 701861.0,
+      "peak_gb": 0.32,
+      "history": [
+        [
+          5,
+          5.1682
+        ]
+      ],
+      "oom_retry": false
+    },
+    {
+      "label": "seed_wavelm_3000000_s1",
+      "arch": "wavelm",
+      "params_dof": 2974243,
+      "steps_target": 5,
+      "steps_done": 5,
+      "batch": 32,
+      "T": 512,
+      "lr": 0.0003,
+      "seed": 1,
+      "tokens": 81920,
+      "val_bpb_final": 7.3808,
+      "val_bpb_best": 7.3808,
+      "wall_s": 6.4,
+      "tok_per_s": 12894.0,
+      "peak_gb": 10.35,
+      "history": [
+        [
+          5,
+          7.3808
+        ]
+      ],
+      "oom_retry": false
+    },
+    {
+      "label": "seed_wavelm_3000000_s2",
+      "arch": "wavelm",
+      "params_dof": 2974243,
+      "steps_target": 5,
+      "steps_done": 5,
+      "batch": 32,
+      "T": 512,
+      "lr": 0.0003,
+      "seed": 2,
+      "tokens": 81920,
+      "val_bpb_final": 7.1979,
+      "val_bpb_best": 7.1979,
+      "wall_s": 6.3,
+      "tok_per_s": 12902.0,
+      "peak_gb": 10.35,
+      "history": [
+        [
+          5,
+          7.1979
+        ]
+      ],
+      "oom_retry": false
+    },
+    {
+      "label": "seed_gpt_3000000_s1",
+      "arch": "gpt",
+      "params_dof": 2989824,
+      "steps_target": 5,
+      "steps_done": 5,
+      "batch": 32,
+      "T": 512,
+      "lr": 0.003,
+      "seed": 1,
+      "tokens": 81920,
+      "val_bpb_final": 5.9678,
+      "val_bpb_best": 5.9678,
+      "wall_s": 0.8,
+      "tok_per_s": 105104.0,
+      "peak_gb": 2.24,
+      "history": [
+        [
+          5,
+          5.9678
+        ]
+      ],
+      "oom_retry": false
+    },
+    {
+      "label": "seed_gpt_3000000_s2",
+      "arch": "gpt",
+      "params_dof": 2989824,
+      "steps_target": 5,
+      "steps_done": 5,
+      "batch": 32,
+      "T": 512,
+      "lr": 0.003,
+      "seed": 2,
+      "tokens": 81920,
+      "val_bpb_final": 6.1091,
+      "val_bpb_best": 6.1091,
+      "wall_s": 0.8,
+      "tok_per_s": 105038.0,
+      "peak_gb": 2.24,
+      "history": [
+        [
+          5,
+          6.1091
+        ]
+      ],
+      "oom_retry": false
+    }
+  ],
+  "wallclock": [
+    {
+      "label": "wall_wavelm_1200000",
+      "arch": "wavelm",
+      "params_dof": 1116835,
+      "steps_target": 100000,
+      "steps_done": 250,
+      "batch": 32,
+      "T": 512,
+      "lr": 0.0003,
+      "seed": 0,
+      "tokens": 4096000,
+      "val_bpb_final": 5.8141,
+      "val_bpb_best": 5.8141,
+      "wall_s": 62.6,
+      "tok_per_s": 65410.0,
+      "peak_gb": 6.07,
+      "history": [
+        [
+          250,
+          5.8141
+        ]
+      ],
+      "oom_retry": false
+    },
+    {
+      "label": "wall_gpt_1200000",
+      "arch": "gpt",
+      "params_dof": 1215744,
+      "steps_target": 100000,
+      "steps_done": 250,
+      "batch": 32,
+      "T": 512,
+      "lr": 0.003,
+      "seed": 0,
+      "tokens": 4096000,
+      "val_bpb_final": 3.814,
+      "val_bpb_best": 3.814,
+      "wall_s": 4.8,
+      "tok_per_s": 860321.0,
+      "peak_gb": 0.95,
+      "history": [
+        [
+          250,
+          3.814
+        ]
+      ],
+      "oom_retry": false
+    },
+    {
+      "label": "wall_wavelm_3000000",
+      "arch": "wavelm",
+      "params_dof": 2974243,
+      "steps_target": 100000,
+      "steps_done": 250,
+      "batch": 32,
+      "T": 512,
+      "lr": 0.0003,
+      "seed": 0,
+      "tokens": 4096000,
+      "val_bpb_final": 5.5534,
+      "val_bpb_best": 5.5534,
+      "wall_s": 111.6,
+      "tok_per_s": 36705.0,
+      "peak_gb": 10.35,
+      "history": [
+        [
+          250,
+          5.5534
+        ]
+      ],
+      "oom_retry": false
+    },
+    {
+      "label": "wall_gpt_3000000",
+      "arch": "gpt",
+      "params_dof": 2989824,
+      "steps_target": 100000,
+      "steps_done": 250,
+      "batch": 32,
+      "T": 512,
+      "lr": 0.003,
+      "seed": 0,
+      "tokens": 4096000,
+      "val_bpb_final": 3.8076,
+      "val_bpb_best": 3.8076,
+      "wall_s": 11.2,
+      "tok_per_s": 365179.0,
+      "peak_gb": 2.24,
+      "history": [
+        [
+          250,
+          3.8076
+        ]
+      ],
+      "oom_retry": false
+    }
+  ],
+  "fits": {
+    "wavelm": {
+      "points": [
+        [
+          519907,
+          7.7016
+        ],
+        [
+          1116835,
+          7.6717
+        ],
+        [
+          2974243,
+          7.5891
+        ],
+        [
+          6827043,
+          7.016
+        ]
+      ],
+      "fit": {
+        "E_inf": 0.0,
+        "A": 12.118138796900313,
+        "alpha": 0.033344254278508165,
+        "sse": 0.08654659476964496
+      }
+    },
+    "gpt": {
+      "points": [
+        [
+          492672,
+          5.1334
+        ],
+        [
+          1215744,
+          6.1008
+        ],
+        [
+          2989824,
+          5.9467
+        ],
+        [
+          7139712,
+          5.2131
+        ]
+      ],
+      "fit": {
+        "E_inf": 0.0,
+        "A": 5.352095537667752,
+        "alpha": -0.0029103177342373137,
+        "sse": 0.7389353231441529
+      }
+    }
+  }
+}

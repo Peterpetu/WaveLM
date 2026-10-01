@@ -1,0 +1,94 @@
+==============================================================================
+  COMPREHENSIVE TRAINING ANALYSIS
+  Metrics file: checkpoints/aifs32m/metrics.jsonl
+==============================================================================
+  Total steps recorded: 1000
+  Training records: 983 (skipped: 166)
+  Validation runs:  10
+
+------------------------------------------------------------------------------
+  EFE-DECOMPOSITION TRAJECTORY (5 phases through training)
+------------------------------------------------------------------------------
+    step |    L_total     L_prag      L_epi      L_pol      L_cmp     grad         lr
+  ----------------------------------------------------------------------------
+      99 |    10.3820     8.9637    -0.0457     0.0257     1.4430     7.27   7.43e-05
+     295 |     4.8371     6.4400    -3.0294     1.1602     0.2662     5.41   8.89e-05
+     508 |     4.0188     6.3865    -4.5364     1.8931     0.2757     9.62   6.15e-05
+     704 |     4.4801     6.4528    -4.0633     1.8132     0.2774     9.39   3.25e-05
+     900 |     4.5967     6.4333    -3.8731     1.7591     0.2774     8.24   1.36e-05
+
+------------------------------------------------------------------------------
+  VALIDATION HISTORY
+------------------------------------------------------------------------------
+  step   100 | CE=9.0256 PPL=8313.4 L_epi=-0.058 L_total=10.5203
+  step   200 | CE=8.2602 PPL=3866.9 L_epi=-0.130 L_total=8.4719
+  step   300 | CE=6.1067 PPL=448.9 L_epi=-3.838 L_total=4.0519  <-- BEST
+  step   400 | CE=6.2528 PPL=519.5 L_epi=-4.773 L_total=3.5060
+  step   500 | CE=6.4266 PPL=618.1 L_epi=-4.666 L_total=3.9443
+  step   600 | CE=6.4564 PPL=636.8 L_epi=-4.387 L_total=4.2101
+  step   700 | CE=6.4633 PPL=641.2 L_epi=-4.122 L_total=4.4190
+  step   800 | CE=6.4747 PPL=648.5 L_epi=-3.930 L_total=4.5700
+  step   900 | CE=6.4417 PPL=627.5 L_epi=-3.947 L_total=4.5198
+  step  1000 | CE=6.4177 PPL=612.6 L_epi=-3.969 L_total=4.4842
+
+  Baseline (uniform over V=8192): PPL = 8192
+  First val:  PPL = 8313.4  CE = 9.0256
+  Best val:   PPL = 448.9  CE = 6.1067  at step 300
+  Last val:   PPL = 612.6  CE = 6.4177
+  Best vs first: 18.5x PPL improvement
+  Last vs best:  +36% regression (plateau or InfoNCE saturation)
+
+------------------------------------------------------------------------------
+  PLATEAU DIAGNOSTIC
+------------------------------------------------------------------------------
+  Plateau / regression began at step 400
+  Component magnitudes around plateau (avg over +-30 steps):
+    L_prag = +6.235 (CE-like)
+    L_epi  = -4.669 (epistemic)
+    L_pol  = +1.775 (policy KL)
+    L_cmp  = +0.272 (complexity KL)
+  InfoNCE upper-bound on |L_epi| ~ ln(N+1) = ln(33) = 3.497
+  >>> L_epi has saturated at the InfoNCE bound -- this is the canonical
+      InfoNCE pathology: the critic learns to discriminate trivially, 
+      L_epi becomes large negative, and dominates the gradient. Pragmatic 
+      learning halts. Mitigation: cap L_epi (e.g. clamp to >=-1.0), or
+      reduce lambda_epi (e.g. 0.1) so pragmatic gradient dominates.
+
+------------------------------------------------------------------------------
+  TRAINING DYNAMICS
+------------------------------------------------------------------------------
+  grad_norm: first=7.811 last=8.141 min=2.733 max=10.926
+  GPU memory (allocated): avg=0.26G peak=0.26G
+
+------------------------------------------------------------------------------
+  CONSTITUTIONAL AUDIT (Plan �9.2: all 4 EFE sub-terms must be active)
+------------------------------------------------------------------------------
+  Final step 1000 EFE decomposition:
+    G_prag (pragmatic, CE-like):    +6.4244
+    G_epi  (epistemic, InfoNCE MI): -3.9146
+    G_pol  (policy prior KL):       +1.7553
+    G_cmp  (compute prior KL):      +0.2773
+
+  All four active and non-zero in the gradient pathway? YES
+
+------------------------------------------------------------------------------
+  RECOMMENDATIONS FOR NEXT TRAINING RUN
+------------------------------------------------------------------------------
+  - Best val PPL (449) is < 50% of uniform baseline (8192):
+    the model IS learning real structure beyond bigram statistics.
+  - InfoNCE-saturation regression of +36% after step 300:
+    1) clamp L_epi: e.g. in efe.epistemic_value() return -MI_lo.clamp(min=-1.0)
+    2) lower lambda_epi cap: --lambda_epi_max 0.1 (instead of 1.0)
+    3) longer warmup of lambda_epi (>10% so the pragmatic head matures first)
+  - Step count (1000) is far below Plan's M1 budget (30k):
+    a longer run is needed before declaring M1 success or failure.
+  - Best val PPL (449) is still far from M1 target
+Traceback (most recent call last):
+  File "active_inference_thermodynamic_computation_llm\scripts\analyze_training.py", line 241, in <module>
+    main()
+  File "active_inference_thermodynamic_computation_llm\scripts\analyze_training.py", line 233, in main
+    print(f"    (val loss \u2264 1.45 nats/tok \u2192 PPL \u2264 4.3).")
+  File "<home>\.pyenv\pyenv-win\versions\3.11.2\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2264' in position 14: character maps to <undefined>

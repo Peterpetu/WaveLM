@@ -1,0 +1,165 @@
+<home>\.pyenv\pyenv-win\versions\3.11.2\Lib\site-packages\torch\nn\modules\module.py:1341: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:28.)
+  return t.to(
+  Param group 'decay':         7,348,224 params, wd=0.01
+  Param group 'no_decay':          2,051 params, wd=0.0
+==============================================================================
+  WaveLM  (complex wave-field byte LM)
+==============================================================================
+  Params: 7,350,275 total (real DOF; complex counted 2x)
+  Config: 6000 steps, batch=24, seq_len=1024 bytes
+  Token budget: 147,456,000 bytes
+  Arch: d=2048 n_sub=16 delta=2 L_cyc=10 mix=True(rank=96) Var0(w)=3.290
+  Device: cuda
+==============================================================================
+Step     1/6000 [WaveLM] | CE=6.8603 PPL=953.64 bpb=9.897 | 7,360 tok/s ∇=23.03 GPU=10.8G lr=3.33e-07
+Step    20/6000 [WaveLM] | CE=6.1678 PPL=477.15 bpb=8.898 | 8,987 tok/s ∇=18.11 GPU=10.8G lr=6.67e-06 ETA=4.6h
+Step    40/6000 [WaveLM] | CE=5.1321 PPL=169.37 bpb=7.404 | 8,914 tok/s ∇=14.66 GPU=10.8G lr=1.33e-05 ETA=4.6h
+Step    60/6000 [WaveLM] | CE=4.5516 PPL=94.78 bpb=6.567 | 8,662 tok/s ∇=7.81 GPU=10.8G lr=2.00e-05 ETA=4.6h
+Step    80/6000 [WaveLM] | CE=3.9972 PPL=54.44 bpb=5.767 | 8,854 tok/s ∇=4.38 GPU=10.8G lr=2.67e-05 ETA=4.6h
+Step   100/6000 [WaveLM] | CE=3.6269 PPL=37.60 bpb=5.232 | 8,793 tok/s ∇=5.57 GPU=10.8G lr=3.33e-05 ETA=4.6h
+Step   120/6000 [WaveLM] | CE=3.2588 PPL=26.02 bpb=4.701 | 8,955 tok/s ∇=7.37 GPU=10.8G lr=4.00e-05 ETA=4.5h
+Step   140/6000 [WaveLM] | CE=3.0509 PPL=21.13 bpb=4.401 | 9,046 tok/s ∇=5.40 GPU=10.8G lr=4.67e-05 ETA=4.5h
+Step   160/6000 [WaveLM] | CE=2.8442 PPL=17.19 bpb=4.103 | 8,947 tok/s ∇=4.18 GPU=10.8G lr=5.33e-05 ETA=4.5h
+Step   180/6000 [WaveLM] | CE=2.6961 PPL=14.82 bpb=3.890 | 8,948 tok/s ∇=5.30 GPU=10.8G lr=6.00e-05 ETA=4.5h
+Step   200/6000 [WaveLM] | CE=2.6191 PPL=13.72 bpb=3.779 | 8,866 tok/s ∇=9.07 GPU=10.8G lr=6.67e-05 ETA=4.5h
+Step   220/6000 [WaveLM] | CE=2.5152 PPL=12.37 bpb=3.629 | 8,770 tok/s ∇=8.92 GPU=10.8G lr=7.33e-05 ETA=4.4h
+Step   240/6000 [WaveLM] | CE=2.4416 PPL=11.49 bpb=3.522 | 8,828 tok/s ∇=9.70 GPU=10.8G lr=8.00e-05 ETA=4.4h
+  >>> VAL: CE=2.3641 PPL=10.63 (3.4107 bpb)
+  Disk free before save (checkpoints/wavelm_run4): 2.76 GB
+  Saved checkpoint: best.pt
+  Disk free after save (checkpoints/wavelm_run4): 2.67 GB
+  >>> New best Val PPL: 10.63  (3.4107 bpb)
+Step   260/6000 [WaveLM] | CE=2.3911 PPL=10.93 bpb=3.450 | 7,422 tok/s ∇=18.34 GPU=10.8G lr=8.67e-05 ETA=4.5h
+Step   280/6000 [WaveLM] | CE=2.2629 PPL=9.61 bpb=3.265 | 8,963 tok/s ∇=13.27 GPU=10.8G lr=9.33e-05 ETA=4.5h
+Step   300/6000 [WaveLM] | CE=2.2005 PPL=9.03 bpb=3.175 | 9,016 tok/s ∇=19.18 GPU=10.8G lr=1.00e-04 ETA=4.4h
+Step   320/6000 [WaveLM] | CE=2.1242 PPL=8.37 bpb=3.065 | 8,804 tok/s ∇=19.80 GPU=10.8G lr=1.00e-04 ETA=4.4h
+Step   340/6000 [WaveLM] | CE=2.0419 PPL=7.71 bpb=2.946 | 8,771 tok/s ∇=14.29 GPU=10.8G lr=1.00e-04 ETA=4.4h
+Step   360/6000 [WaveLM] | CE=2.0268 PPL=7.59 bpb=2.924 | 8,566 tok/s ∇=11.98 GPU=10.8G lr=1.00e-04 ETA=4.4h
+Step   380/6000 [WaveLM] | CE=1.9220 PPL=6.83 bpb=2.773 | 8,796 tok/s ∇=15.14 GPU=10.8G lr=1.00e-04 ETA=4.4h
+Step   400/6000 [WaveLM] | CE=1.9794 PPL=7.24 bpb=2.856 | 8,939 tok/s ∇=21.23 GPU=10.8G lr=9.99e-05 ETA=4.4h
+Step   420/6000 [WaveLM] | CE=1.8557 PPL=6.40 bpb=2.677 | 8,928 tok/s ∇=20.12 GPU=10.8G lr=9.99e-05 ETA=4.3h
+Step   440/6000 [WaveLM] | CE=1.8101 PPL=6.11 bpb=2.611 | 8,523 tok/s ∇=16.03 GPU=10.8G lr=9.99e-05 ETA=4.3h
+Step   460/6000 [WaveLM] | CE=1.8090 PPL=6.10 bpb=2.610 | 10,230 tok/s ∇=22.57 GPU=10.8G lr=9.99e-05 ETA=4.3h
+Step   480/6000 [WaveLM] | CE=1.7612 PPL=5.82 bpb=2.541 | 10,529 tok/s ∇=18.15 GPU=10.8G lr=9.98e-05 ETA=4.2h
+Step   500/6000 [WaveLM] | CE=1.6808 PPL=5.37 bpb=2.425 | 10,680 tok/s ∇=13.82 GPU=10.8G lr=9.98e-05 ETA=4.2h
+  >>> VAL: CE=1.7162 PPL=5.56 (2.4760 bpb)
+  Disk free before save (checkpoints/wavelm_run4): 2.67 GB
+  Saved checkpoint: best.pt
+  Disk free after save (checkpoints/wavelm_run4): 2.67 GB
+  >>> New best Val PPL: 5.56  (2.4760 bpb)
+Step   520/6000 [WaveLM] | CE=1.6713 PPL=5.32 bpb=2.411 | 8,951 tok/s ∇=17.12 GPU=10.8G lr=9.97e-05 ETA=4.2h
+Step   540/6000 [WaveLM] | CE=1.6857 PPL=5.40 bpb=2.432 | 10,744 tok/s ∇=17.60 GPU=10.8G lr=9.97e-05 ETA=4.1h
+Step   560/6000 [WaveLM] | CE=1.6632 PPL=5.28 bpb=2.399 | 10,738 tok/s ∇=17.19 GPU=10.8G lr=9.96e-05 ETA=4.1h
+Step   580/6000 [WaveLM] | CE=1.6483 PPL=5.20 bpb=2.378 | 10,738 tok/s ∇=18.85 GPU=10.8G lr=9.96e-05 ETA=4.1h
+Step   600/6000 [WaveLM] | CE=1.6429 PPL=5.17 bpb=2.370 | 10,738 tok/s ∇=15.77 GPU=10.8G lr=9.95e-05 ETA=4.0h
+Step   620/6000 [WaveLM] | CE=1.5767 PPL=4.84 bpb=2.275 | 10,742 tok/s ∇=8.46 GPU=10.8G lr=9.95e-05 ETA=4.0h
+Step   640/6000 [WaveLM] | CE=1.5967 PPL=4.94 bpb=2.303 | 10,738 tok/s ∇=18.75 GPU=10.8G lr=9.94e-05 ETA=4.0h
+Step   660/6000 [WaveLM] | CE=1.5963 PPL=4.93 bpb=2.303 | 10,737 tok/s ∇=19.28 GPU=10.8G lr=9.93e-05 ETA=3.9h
+Step   680/6000 [WaveLM] | CE=1.5320 PPL=4.63 bpb=2.210 | 10,738 tok/s ∇=16.57 GPU=10.8G lr=9.92e-05 ETA=3.9h
+Step   700/6000 [WaveLM] | CE=1.5083 PPL=4.52 bpb=2.176 | 10,744 tok/s ∇=10.84 GPU=10.8G lr=9.92e-05 ETA=3.9h
+Step   720/6000 [WaveLM] | CE=1.4956 PPL=4.46 bpb=2.158 | 10,738 tok/s ∇=9.92 GPU=10.8G lr=9.91e-05 ETA=3.8h
+Step   740/6000 [WaveLM] | CE=1.4998 PPL=4.48 bpb=2.164 | 10,737 tok/s ∇=11.21 GPU=10.8G lr=9.90e-05 ETA=3.8h
+  >>> VAL: CE=1.4587 PPL=4.30 (2.1044 bpb)
+  Disk free before save (checkpoints/wavelm_run4): 2.66 GB
+  Saved checkpoint: best.pt
+  Disk free after save (checkpoints/wavelm_run4): 2.66 GB
+  >>> New best Val PPL: 4.30  (2.1044 bpb)
+Step   760/6000 [WaveLM] | CE=1.4922 PPL=4.45 bpb=2.153 | 8,986 tok/s ∇=12.73 GPU=10.8G lr=9.89e-05 ETA=3.8h
+Step   780/6000 [WaveLM] | CE=1.4411 PPL=4.23 bpb=2.079 | 10,737 tok/s ∇=10.52 GPU=10.8G lr=9.88e-05 ETA=3.8h
+Step   800/6000 [WaveLM] | CE=1.4919 PPL=4.45 bpb=2.152 | 10,742 tok/s ∇=14.19 GPU=10.8G lr=9.87e-05 ETA=3.8h
+Step   820/6000 [WaveLM] | CE=1.4405 PPL=4.22 bpb=2.078 | 10,737 tok/s ∇=11.33 GPU=10.8G lr=9.86e-05 ETA=3.7h
+Step   840/6000 [WaveLM] | CE=1.4566 PPL=4.29 bpb=2.101 | 10,737 tok/s ∇=18.02 GPU=10.8G lr=9.85e-05 ETA=3.7h
+Step   860/6000 [WaveLM] | CE=1.4578 PPL=4.30 bpb=2.103 | 10,738 tok/s ∇=10.64 GPU=10.8G lr=9.83e-05 ETA=3.7h
+Step   880/6000 [WaveLM] | CE=1.4671 PPL=4.34 bpb=2.117 | 10,742 tok/s ∇=14.89 GPU=10.8G lr=9.82e-05 ETA=3.7h
+Step   900/6000 [WaveLM] | CE=1.4396 PPL=4.22 bpb=2.077 | 10,737 tok/s ∇=11.39 GPU=10.8G lr=9.81e-05 ETA=3.6h
+Step   920/6000 [WaveLM] | CE=1.3902 PPL=4.02 bpb=2.006 | 10,736 tok/s ∇=12.51 GPU=10.8G lr=9.80e-05 ETA=3.6h
+Step   940/6000 [WaveLM] | CE=1.3981 PPL=4.05 bpb=2.017 | 10,737 tok/s ∇=9.91 GPU=10.8G lr=9.78e-05 ETA=3.6h
+Step   960/6000 [WaveLM] | CE=1.3881 PPL=4.01 bpb=2.003 | 10,741 tok/s ∇=7.63 GPU=10.8G lr=9.77e-05 ETA=3.6h
+Step   980/6000 [WaveLM] | CE=1.4292 PPL=4.18 bpb=2.062 | 10,736 tok/s ∇=8.94 GPU=10.8G lr=9.76e-05 ETA=3.5h
+Step  1000/6000 [WaveLM] | CE=1.4114 PPL=4.10 bpb=2.036 | 10,736 tok/s ∇=14.64 GPU=10.8G lr=9.74e-05 ETA=3.5h
+  >>> VAL: CE=1.3554 PPL=3.88 (1.9554 bpb)
+  Disk free before save (checkpoints/wavelm_run4): 2.66 GB
+  Saved checkpoint: best.pt
+  Disk free after save (checkpoints/wavelm_run4): 2.66 GB
+  >>> New best Val PPL: 3.88  (1.9554 bpb)
+Step  1020/6000 [WaveLM] | CE=1.3857 PPL=4.00 bpb=1.999 | 8,981 tok/s ∇=10.27 GPU=10.8G lr=9.73e-05 ETA=3.5h
+Step  1040/6000 [WaveLM] | CE=1.3516 PPL=3.86 bpb=1.950 | 10,741 tok/s ∇=7.43 GPU=10.8G lr=9.71e-05 ETA=3.5h
+Step  1060/6000 [WaveLM] | CE=1.3523 PPL=3.87 bpb=1.951 | 10,741 tok/s ∇=13.71 GPU=10.8G lr=9.70e-05 ETA=3.5h
+Step  1080/6000 [WaveLM] | CE=1.3975 PPL=4.05 bpb=2.016 | 10,741 tok/s ∇=10.34 GPU=10.8G lr=9.68e-05 ETA=3.5h
+Step  1100/6000 [WaveLM] | CE=1.3176 PPL=3.73 bpb=1.901 | 10,740 tok/s ∇=9.48 GPU=10.8G lr=9.67e-05 ETA=3.4h
+Step  1120/6000 [WaveLM] | CE=1.3367 PPL=3.81 bpb=1.929 | 10,740 tok/s ∇=9.03 GPU=10.8G lr=9.65e-05 ETA=3.4h
+Step  1140/6000 [WaveLM] | CE=1.3244 PPL=3.76 bpb=1.911 | 10,723 tok/s ∇=11.77 GPU=10.8G lr=9.63e-05 ETA=3.4h
+Step  1160/6000 [WaveLM] | CE=1.3409 PPL=3.82 bpb=1.935 | 10,728 tok/s ∇=7.93 GPU=10.8G lr=9.61e-05 ETA=3.4h
+Step  1180/6000 [WaveLM] | CE=1.2867 PPL=3.62 bpb=1.856 | 10,730 tok/s ∇=10.35 GPU=10.8G lr=9.60e-05 ETA=3.4h
+Step  1200/6000 [WaveLM] | CE=1.2949 PPL=3.65 bpb=1.868 | 10,729 tok/s ∇=10.91 GPU=10.8G lr=9.58e-05 ETA=3.3h
+Step  1220/6000 [WaveLM] | CE=1.2943 PPL=3.65 bpb=1.867 | 10,729 tok/s ∇=11.36 GPU=10.8G lr=9.56e-05 ETA=3.3h
+Step  1240/6000 [WaveLM] | CE=1.3224 PPL=3.75 bpb=1.908 | 10,729 tok/s ∇=12.15 GPU=10.8G lr=9.54e-05 ETA=3.3h
+  >>> VAL: CE=1.2805 PPL=3.60 (1.8474 bpb)
+  Disk free before save (checkpoints/wavelm_run4): 2.67 GB
+  Saved checkpoint: best.pt
+  Disk free after save (checkpoints/wavelm_run4): 2.67 GB
+  >>> New best Val PPL: 3.60  (1.8474 bpb)
+Step  1260/6000 [WaveLM] | CE=1.3222 PPL=3.75 bpb=1.908 | 8,979 tok/s ∇=10.71 GPU=10.8G lr=9.52e-05 ETA=3.3h
+Step  1280/6000 [WaveLM] | CE=1.3065 PPL=3.69 bpb=1.885 | 10,731 tok/s ∇=9.33 GPU=10.8G lr=9.50e-05 ETA=3.3h
+Step  1300/6000 [WaveLM] | CE=1.2731 PPL=3.57 bpb=1.837 | 10,730 tok/s ∇=7.17 GPU=10.8G lr=9.48e-05 ETA=3.3h
+Step  1320/6000 [WaveLM] | CE=1.2638 PPL=3.54 bpb=1.823 | 10,730 tok/s ∇=8.82 GPU=10.8G lr=9.46e-05 ETA=3.2h
+Step  1340/6000 [WaveLM] | CE=1.2648 PPL=3.54 bpb=1.825 | 10,731 tok/s ∇=13.03 GPU=10.8G lr=9.44e-05 ETA=3.2h
+Step  1360/6000 [WaveLM] | CE=1.2441 PPL=3.47 bpb=1.795 | 10,731 tok/s ∇=9.47 GPU=10.8G lr=9.42e-05 ETA=3.2h
+Step  1380/6000 [WaveLM] | CE=1.2674 PPL=3.55 bpb=1.828 | 10,732 tok/s ∇=9.96 GPU=10.8G lr=9.40e-05 ETA=3.2h
+Step  1400/6000 [WaveLM] | CE=1.2732 PPL=3.57 bpb=1.837 | 10,732 tok/s ∇=10.89 GPU=10.8G lr=9.38e-05 ETA=3.2h
+Step  1420/6000 [WaveLM] | CE=1.2770 PPL=3.59 bpb=1.842 | 10,731 tok/s ∇=10.74 GPU=10.8G lr=9.35e-05 ETA=3.2h
+Step  1440/6000 [WaveLM] | CE=1.2474 PPL=3.48 bpb=1.800 | 10,730 tok/s ∇=8.47 GPU=10.8G lr=9.33e-05 ETA=3.1h
+Step  1460/6000 [WaveLM] | CE=1.2401 PPL=3.46 bpb=1.789 | 10,730 tok/s ∇=9.08 GPU=10.8G lr=9.31e-05 ETA=3.1h
+Step  1480/6000 [WaveLM] | CE=1.2433 PPL=3.47 bpb=1.794 | 10,730 tok/s ∇=12.54 GPU=10.8G lr=9.29e-05 ETA=3.1h
+Step  1500/6000 [WaveLM] | CE=1.2560 PPL=3.51 bpb=1.812 | 10,730 tok/s ∇=6.32 GPU=10.8G lr=9.26e-05 ETA=3.1h
+  >>> VAL: CE=1.2190 PPL=3.38 (1.7586 bpb)
+  Disk free before save (checkpoints/wavelm_run4): 2.66 GB
+  Saved checkpoint: best.pt
+  Disk free after save (checkpoints/wavelm_run4): 2.66 GB
+  >>> New best Val PPL: 3.38  (1.7586 bpb)
+Step  1520/6000 [WaveLM] | CE=1.2121 PPL=3.36 bpb=1.749 | 8,979 tok/s ∇=7.16 GPU=10.8G lr=9.24e-05 ETA=3.1h
+Step  1540/6000 [WaveLM] | CE=1.2197 PPL=3.39 bpb=1.760 | 10,729 tok/s ∇=11.26 GPU=10.8G lr=9.21e-05 ETA=3.1h
+Step  1560/6000 [WaveLM] | CE=1.2486 PPL=3.49 bpb=1.801 | 10,730 tok/s ∇=16.03 GPU=10.8G lr=9.19e-05 ETA=3.0h
+Step  1580/6000 [WaveLM] | CE=1.2506 PPL=3.49 bpb=1.804 | 10,731 tok/s ∇=9.56 GPU=10.8G lr=9.16e-05 ETA=3.0h
+Step  1600/6000 [WaveLM] | CE=1.2282 PPL=3.41 bpb=1.772 | 10,729 tok/s ∇=10.19 GPU=10.8G lr=9.14e-05 ETA=3.0h
+Step  1620/6000 [WaveLM] | CE=1.1942 PPL=3.30 bpb=1.723 | 10,730 tok/s ∇=14.61 GPU=10.8G lr=9.11e-05 ETA=3.0h
+Step  1640/6000 [WaveLM] | CE=1.2463 PPL=3.48 bpb=1.798 | 10,730 tok/s ∇=12.23 GPU=10.8G lr=9.09e-05 ETA=3.0h
+Step  1660/6000 [WaveLM] | CE=1.2284 PPL=3.42 bpb=1.772 | 10,729 tok/s ∇=6.83 GPU=10.8G lr=9.06e-05 ETA=3.0h
+Step  1680/6000 [WaveLM] | CE=1.2149 PPL=3.37 bpb=1.753 | 10,729 tok/s ∇=9.18 GPU=10.8G lr=9.04e-05 ETA=2.9h
+Step  1700/6000 [WaveLM] | CE=1.2050 PPL=3.34 bpb=1.738 | 10,728 tok/s ∇=8.21 GPU=10.8G lr=9.01e-05 ETA=2.9h
+Step  1720/6000 [WaveLM] | CE=1.2354 PPL=3.44 bpb=1.782 | 10,729 tok/s ∇=8.36 GPU=10.8G lr=8.98e-05 ETA=2.9h
+Step  1740/6000 [WaveLM] | CE=1.2059 PPL=3.34 bpb=1.740 | 10,730 tok/s ∇=12.64 GPU=10.8G lr=8.95e-05 ETA=2.9h
+  >>> VAL: CE=1.1662 PPL=3.21 (1.6824 bpb)
+  Disk free before save (checkpoints/wavelm_run4): 2.66 GB
+  Saved checkpoint: best.pt
+  Disk free after save (checkpoints/wavelm_run4): 2.66 GB
+  >>> New best Val PPL: 3.21  (1.6824 bpb)
+Step  1760/6000 [WaveLM] | CE=1.2060 PPL=3.34 bpb=1.740 | 8,978 tok/s ∇=8.72 GPU=10.8G lr=8.93e-05 ETA=2.9h
+Step  1780/6000 [WaveLM] | CE=1.2252 PPL=3.40 bpb=1.768 | 10,730 tok/s ∇=10.29 GPU=10.8G lr=8.90e-05 ETA=2.9h
+Step  1800/6000 [WaveLM] | CE=1.2152 PPL=3.37 bpb=1.753 | 10,729 tok/s ∇=7.88 GPU=10.8G lr=8.87e-05 ETA=2.9h
+Step  1820/6000 [WaveLM] | CE=1.1862 PPL=3.27 bpb=1.711 | 10,729 tok/s ∇=9.33 GPU=10.8G lr=8.84e-05 ETA=2.8h
+Step  1840/6000 [WaveLM] | CE=1.2039 PPL=3.33 bpb=1.737 | 10,730 tok/s ∇=9.34 GPU=10.8G lr=8.81e-05 ETA=2.8h
+Step  1860/6000 [WaveLM] | CE=1.2356 PPL=3.44 bpb=1.783 | 10,730 tok/s ∇=11.97 GPU=10.8G lr=8.78e-05 ETA=2.8h
+Step  1880/6000 [WaveLM] | CE=1.2022 PPL=3.33 bpb=1.734 | 10,730 tok/s ∇=7.60 GPU=10.8G lr=8.75e-05 ETA=2.8h
+Step  1900/6000 [WaveLM] | CE=1.1947 PPL=3.30 bpb=1.724 | 10,729 tok/s ∇=8.27 GPU=10.8G lr=8.73e-05 ETA=2.8h
+Step  1920/6000 [WaveLM] | CE=1.1797 PPL=3.25 bpb=1.702 | 10,730 tok/s ∇=7.72 GPU=10.8G lr=8.70e-05 ETA=2.8h
+Step  1940/6000 [WaveLM] | CE=1.1989 PPL=3.32 bpb=1.730 | 10,731 tok/s ∇=8.55 GPU=10.8G lr=8.66e-05 ETA=2.7h
+Step  1960/6000 [WaveLM] | CE=1.1758 PPL=3.24 bpb=1.696 | 10,730 tok/s ∇=8.48 GPU=10.8G lr=8.63e-05 ETA=2.7h
+Step  1980/6000 [WaveLM] | CE=1.1706 PPL=3.22 bpb=1.689 | 10,731 tok/s ∇=7.25 GPU=10.8G lr=8.60e-05 ETA=2.7h
+Step  2000/6000 [WaveLM] | CE=1.1973 PPL=3.31 bpb=1.727 | 10,729 tok/s ∇=11.95 GPU=10.8G lr=8.57e-05 ETA=2.7h
+  >>> VAL: CE=1.1396 PPL=3.13 (1.6441 bpb)
+  Disk free before save (checkpoints/wavelm_run4): 2.66 GB
+  Saved checkpoint: best.pt
+  Disk free after save (checkpoints/wavelm_run4): 2.66 GB
+  >>> New best Val PPL: 3.13  (1.6441 bpb)
+Step  2020/6000 [WaveLM] | CE=1.2131 PPL=3.36 bpb=1.750 | 8,970 tok/s ∇=8.97 GPU=10.8G lr=8.54e-05 ETA=2.7h
+Step  2040/6000 [WaveLM] | CE=1.1555 PPL=3.18 bpb=1.667 | 10,730 tok/s ∇=7.66 GPU=10.8G lr=8.51e-05 ETA=2.7h
+Step  2060/6000 [WaveLM] | CE=1.1414 PPL=3.13 bpb=1.647 | 10,600 tok/s ∇=7.13 GPU=10.8G lr=8.48e-05 ETA=2.7h
+Step  2080/6000 [WaveLM] | CE=1.1648 PPL=3.21 bpb=1.680 | 9,819 tok/s ∇=8.84 GPU=10.8G lr=8.45e-05 ETA=2.6h
+Step  2100/6000 [WaveLM] | CE=1.1279 PPL=3.09 bpb=1.627 | 8,828 tok/s ∇=7.96 GPU=10.8G lr=8.41e-05 ETA=2.6h
+Step  2120/6000 [WaveLM] | CE=1.1514 PPL=3.16 bpb=1.661 | 8,841 tok/s ∇=8.65 GPU=10.8G lr=8.38e-05 ETA=2.6h
+Step  2140/6000 [WaveLM] | CE=1.1697 PPL=3.22 bpb=1.687 | 8,699 tok/s ∇=7.70 GPU=10.8G lr=8.35e-05 ETA=2.6h
+Step  2160/6000 [WaveLM] | CE=1.1350 PPL=3.11 bpb=1.637 | 8,888 tok/s ∇=9.37 GPU=10.8G lr=8.32e-05 ETA=2.6h
+Step  2180/6000 [WaveLM] | CE=1.1220 PPL=3.07 bpb=1.619 | 8,839 tok/s ∇=8.44 GPU=10.8G lr=8.28e-05 ETA=2.6h
+Step  2200/6000 [WaveLM] | CE=1.1628 PPL=3.20 bpb=1.678 | 8,750 tok/s ∇=7.94 GPU=10.8G lr=8.25e-05 ETA=2.6h
+Step  2220/6000 [WaveLM] | CE=1.1583 PPL=3.18 bpb=1.671 | 8,914 tok/s ∇=11.48 GPU=10.8G lr=8.22e-05 ETA=2.6h

@@ -1,0 +1,22 @@
+Loading tokenizer from data/tinystories\bpe_8k.model...
+Loading model from checkpoints/aifs32m_run2/best_model.pt...
+  step 400, val_ppl 355.3
+
+==============================================================================
+  Generation (gamma=4.0, max_new=24)
+==============================================================================
+
+>>> Prompt: 'Once upon a time'
+    [generation failed: UnicodeEncodeError: 'charmap' codec can't encode character '\u2047' in position 102: character maps to <undefined>]
+
+>>> Prompt: 'The little dog'
+    The little dogand and and and and and and and and and and and and and and and and and and the tin the
+
+>>> Prompt: 'Lily and Tom'
+    Lily and Tomand and and and and and and and and and and and and and and and and and and and wnd b b
+
+>>> Prompt: 'One sunny day,'
+    [generation failed: UnicodeEncodeError: 'charmap' codec can't encode character '\u2047' in position 82: character maps to <undefined>]
+
+>>> Prompt: 'There was a small'
+    There was a smalland and and and and and and and and and and and and and and and and and to b s to

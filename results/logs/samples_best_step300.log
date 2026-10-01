@@ -1,0 +1,43 @@
+C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\native\cuda\TensorCompare.cu:112: block: [0,0,0], thread: [0,0,0] Assertion `input[0] != 0` failed.
+Loading tokenizer from data/tinystories\bpe_8k.model...
+Loading model from checkpoints/aifs32m/best_model.pt...
+  step 300, val_ppl 448.9
+
+==============================================================================
+  Generation (gamma=4.0, max_new=32)
+==============================================================================
+
+>>> Prompt: 'Once upon a time'
+    [generation failed: RuntimeError: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+]
+
+>>> Prompt: 'The little dog'
+    [generation failed: RuntimeError: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+]
+
+>>> Prompt: 'Lily and Tom'
+    [generation failed: RuntimeError: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+]
+
+>>> Prompt: 'One sunny day,'
+    [generation failed: RuntimeError: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+]
+
+>>> Prompt: 'There was a small'
+    [generation failed: RuntimeError: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+]

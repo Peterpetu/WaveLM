@@ -1,0 +1,29 @@
+==============================================================================
+  COMPARISON: Run1-1k-noclamp  vs  Run2-2.5k-clamp
+==============================================================================
+
+                          Metric | Run1-1k-noclamp | Run2-2.5k-clamp
+  -------------------------------+-----------------+-----------------
+              last training step |            1000 |            2500
+                training records |             965 |            2500
+                   skipped steps |             345 |               0
+                 validation runs |              10 |              25
+
+                    best val PPL |         448.9 @300 |         355.3 @400
+                    last val PPL |         612.6 @1000 |         501.3 @2500
+       regression (last vs best) |         +36.5%   |         +41.1%
+
+              L_epi at last step | -3.9145888835191727 | -0.8282780162990093
+
+  Common validation steps:
+    step |   Run1 PPL |   Run2 PPL |      delta
+     100 |     8313.4 |     8609.1 |     +295.7  <-- run1 better
+     200 |     3866.9 |     8054.4 |    +4187.5  <-- run1 better
+     300 |      448.9 |     1285.0 |     +836.1  <-- run1 better
+     400 |      519.5 |      355.3 |     -164.2  <-- run2 better
+     500 |      618.1 |      364.0 |     -254.0  <-- run2 better
+     600 |      636.8 |      386.1 |     -250.7  <-- run2 better
+     700 |      641.2 |      370.9 |     -270.3  <-- run2 better
+     800 |      648.5 |      378.0 |     -270.5  <-- run2 better
+     900 |      627.5 |      390.0 |     -237.5  <-- run2 better
+    1000 |      612.6 |      403.6 |     -209.0  <-- run2 better

@@ -1,0 +1,92 @@
+==============================================================================
+ABLATION CAMPAIGN | 38 runs | T=512 batch=32 steps=2500 (~41M bytes/run) device=cuda
+==============================================================================
+  [REF_d256_s0_lr0.003] dof=328,963 -> bpb_best=1.4586 bpb_final=1.4586 tok/s=153,179 peak=2.87G wall=267.4s | conv+mix+sat+phase+norm+Born
+  [REF_d256_s1_lr0.003] dof=328,963 -> bpb_best=1.4647 bpb_final=1.4647 tok/s=158,987 peak=2.87G wall=257.6s | conv+mix+sat+phase+norm+Born
+  [REF_d256_s2_lr0.003] dof=328,963 -> bpb_best=1.4633 bpb_final=1.4633 tok/s=197,294 peak=2.87G wall=207.6s | conv+mix+sat+phase+norm+Born
+  [no_mix_d256_s0_lr0.003] dof=132,355 -> bpb_best=1.9599 bpb_final=1.9599 tok/s=206,670 peak=2.66G wall=198.2s | mode coupling OFF
+  [no_mix_d256_s1_lr0.003] dof=132,355 -> bpb_best=1.9515 bpb_final=1.9515 tok/s=206,696 peak=2.66G wall=198.2s | mode coupling OFF
+  [no_mix_d256_s2_lr0.003] dof=132,355 -> bpb_best=1.9481 bpb_final=1.9481 tok/s=206,636 peak=2.66G wall=198.2s | mode coupling OFF
+  [ablate_phase_d256_s0_lr0.003] dof=328,963 -> bpb_best=1.4787 bpb_final=1.4787 tok/s=205,155 peak=2.5G wall=199.7s | omega=0
+  [ablate_phase_d256_s1_lr0.003] dof=328,963 -> bpb_best=1.4811 bpb_final=1.4811 tok/s=205,167 peak=2.5G wall=199.6s | omega=0
+  [ablate_phase_d256_s2_lr0.003] dof=328,963 -> bpb_best=1.4822 bpb_final=1.4822 tok/s=205,164 peak=2.5G wall=199.6s | omega=0
+  [ablate_saturation_d256_s0_lr0.003] dof=328,963 -> bpb_best=2.2172 bpb_final=2.2172 tok/s=200,360 peak=2.69G wall=204.4s | g=0, keep norm+Born
+  [ablate_saturation_d256_s1_lr0.003] dof=328,963 -> bpb_best=2.1782 bpb_final=2.1782 tok/s=200,354 peak=2.69G wall=204.4s | g=0, keep norm+Born
+  [ablate_saturation_d256_s2_lr0.003] dof=328,963 -> bpb_best=2.2027 bpb_final=2.2027 tok/s=200,352 peak=2.69G wall=204.4s | g=0, keep norm+Born
+  [ablate_born_d256_s0_lr0.003] dof=328,963 -> bpb_best=1.4286 bpb_final=1.4286 tok/s=199,351 peak=2.87G wall=205.5s | linear readout, keep g+norm
+  [ablate_born_d256_s1_lr0.003] dof=328,963 -> bpb_best=1.4384 bpb_final=1.4384 tok/s=199,343 peak=2.87G wall=205.5s | linear readout, keep g+norm
+  [ablate_born_d256_s2_lr0.003] dof=328,963 -> bpb_best=1.4315 bpb_final=1.4315 tok/s=199,347 peak=2.87G wall=205.5s | linear readout, keep g+norm
+Traceback (most recent call last):
+  File "active_inference_thermodynamic_computation_llm\scripts\ablation_study.py", line 275, in <module>
+    
+  File "active_inference_thermodynamic_computation_llm\scripts\ablation_study.py", line 244, in main
+    return {"label": label, "variant": variant, "d": d, "error": "oom_after_retry"}
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "active_inference_thermodynamic_computation_llm\scripts\ablation_study.py", line 216, in run_one
+    torch.cuda.empty_cache()
+  File "active_inference_thermodynamic_computation_llm\baselines\harness.py", line 158, in train_bytes_model
+    loss = ce_loss(logits, b)
+           ^^^^^^^^^^^^^^^^^^
+  File "active_inference_thermodynamic_computation_llm\wave\readout.py", line 52, in ce_loss
+    B, T, V = logits.shape
+              ^^^^^^^^^^^^
+AttributeError: 'tuple' object has no attribute 'shape'
+RESUME: 15 completed runs in checkpoints/ablation/ablation_results.json; skipping them
+==============================================================================
+ABLATION CAMPAIGN | 38 runs | T=512 batch=32 steps=2500 (~41M bytes/run) device=cuda
+==============================================================================
+  [real_twin_d256_s0_lr0.001] dof=328,707 -> bpb_best=1.744 bpb_final=1.744 tok/s=247,953 peak=2.64G wall=165.2s | real-valued twin, width 2d, matched DOF
+  [real_twin_d256_s0_lr0.003] dof=328,707 -> bpb_best=1.6904 bpb_final=1.6904 tok/s=248,810 peak=2.64G wall=164.6s | real-valued twin, width 2d, matched DOF
+  [real_twin_d256_s1_lr0.001] dof=328,707 -> bpb_best=1.7209 bpb_final=1.7209 tok/s=248,824 peak=2.64G wall=164.6s | real-valued twin, width 2d, matched DOF
+  [real_twin_d256_s1_lr0.003] dof=328,707 -> bpb_best=1.6264 bpb_final=1.6264 tok/s=248,822 peak=2.64G wall=164.6s | real-valued twin, width 2d, matched DOF
+  [selective_d256_s0_lr0.003] dof=337,411 -> bpb_best=1.4441 bpb_final=1.4441 tok/s=156,940 peak=4.01G wall=261.0s | data-dependent retention gate (r_sel=16)
+  [selective_d256_s0_lr0.001] dof=337,411 -> bpb_best=1.5901 bpb_final=1.5901 tok/s=157,494 peak=4.01G wall=260.1s | data-dependent retention gate (r_sel=16)
+  [selective_d256_s1_lr0.003] dof=337,411 -> bpb_best=1.4466 bpb_final=1.4466 tok/s=157,490 peak=4.01G wall=260.1s | data-dependent retention gate (r_sel=16)
+  [selective_d256_s1_lr0.001] dof=337,411 -> bpb_best=1.5917 bpb_final=1.5917 tok/s=157,495 peak=4.01G wall=260.1s | data-dependent retention gate (r_sel=16)
+  [selective_control_d256_s0_lr0.003] dof=341,251 -> bpb_best=1.4569 bpb_final=1.4569 tok/s=195,649 peak=2.88G wall=209.4s | non-selective, rank 34 (DOF 341251 >= selective 337411)
+  [selective_control_d256_s1_lr0.003] dof=341,251 -> bpb_best=1.4532 bpb_final=1.4532 tok/s=195,658 peak=2.88G wall=209.3s | non-selective, rank 34 (DOF 341251 >= selective 337411)
+  [ablate_both_d256_s0_lr0.003] dof=328,963 -> bpb_best=2.3291 bpb_final=2.3291 tok/s=201,437 peak=2.69G wall=203.3s | g=0 + linear readout, keep norm
+  [n_sub4_d256_s0_lr0.003] dof=197,891 -> bpb_best=1.5587 bpb_final=1.5587 tok/s=526,259 peak=1.11G wall=77.8s | depth 4
+  [n_sub8_d256_s0_lr0.003] dof=263,427 -> bpb_best=1.506 bpb_final=1.506 tok/s=286,525 peak=1.99G wall=143.0s | depth 8
+  [n_sub24_d256_s0_lr0.003] dof=525,571 -> bpb_best=1.5958 bpb_final=1.5958 tok/s=101,634 peak=5.53G wall=403.0s | depth 24
+  [untie_steps_d256_s0_lr0.003] dof=340,227 -> bpb_best=1.3826 bpb_final=1.3826 tok/s=196,858 peak=2.87G wall=208.1s | per-step conv kernel
+  [REF_d512_s0_lr0.003] dof=1,051,139 -> bpb_best=1.3401 bpb_final=1.3401 tok/s=72,519 peak=5.72G wall=564.8s | conv+mix+sat+phase+norm+Born
+  [no_mix_d512_s0_lr0.003] dof=264,707 -> bpb_best=1.7951 bpb_final=1.7951 tok/s=75,926 peak=5.29G wall=539.5s | mode coupling OFF
+  [ablate_phase_d512_s0_lr0.003] dof=1,051,139 -> bpb_best=1.3485 bpb_final=1.3485 tok/s=74,947 peak=4.97G wall=546.5s | omega=0
+  [ablate_saturation_d512_s0_lr0.003] dof=1,051,139 -> bpb_best=1.9993 bpb_final=1.9993 tok/s=73,369 peak=5.34G wall=558.3s | g=0, keep norm+Born
+  [ablate_born_d512_s0_lr0.003] dof=1,051,139 -> bpb_best=1.3008 bpb_final=1.3008 tok/s=72,665 peak=5.72G wall=563.7s | linear readout, keep g+norm
+  [real_twin_d512_s0_lr0.003] dof=1,050,627 -> bpb_best=3.7082 bpb_final=3.7082 tok/s=92,360 peak=5.26G wall=443.5s | real-valued twin, width 2d, matched DOF
+  [selective_d512_s0_lr0.003] dof=1,068,035 -> bpb_best=1.3175 bpb_final=1.3175 tok/s=58,415 peak=7.98G wall=701.2s | data-dependent retention gate (r_sel=16)
+  [selective_control_d512_s0_lr0.003] dof=1,075,715 -> bpb_best=1.337 bpb_final=1.337 tok/s=71,930 peak=5.72G wall=569.4s | non-selective, rank 66 (DOF 1075715 >= selective 1068035)
+
+(23 new runs, 15 skipped from resume)
+
+==============================================================================
+SUMMARY (best-lr val bpb, mean over seeds; delta vs REF at same scale)
+
+  d=256:
+    untie_steps          bpb=1.3826 (lr=0.003, n=1)  dREF=-0.0796
+    ablate_born          bpb=1.4328 (lr=0.003, n=3)  dREF=-0.0294
+    selective            bpb=1.4453 (lr=0.003, n=2)  dREF=-0.0169
+    selective_control    bpb=1.4550 (lr=0.003, n=2)  dREF=-0.0071
+    REF                  bpb=1.4622 (lr=0.003, n=3)  dREF=+0.0000
+    ablate_phase         bpb=1.4807 (lr=0.003, n=3)  dREF=+0.0185
+    n_sub8               bpb=1.5060 (lr=0.003, n=1)  dREF=+0.0438
+    n_sub4               bpb=1.5587 (lr=0.003, n=1)  dREF=+0.0965
+    n_sub24              bpb=1.5958 (lr=0.003, n=1)  dREF=+0.1336
+    real_twin            bpb=1.6584 (lr=0.003, n=2)  dREF=+0.1962
+    no_mix               bpb=1.9532 (lr=0.003, n=3)  dREF=+0.4910
+    ablate_saturation    bpb=2.1994 (lr=0.003, n=3)  dREF=+0.7372
+    ablate_both          bpb=2.3291 (lr=0.003, n=1)  dREF=+0.8669
+
+  d=512:
+    ablate_born          bpb=1.3008 (lr=0.003, n=1)  dREF=-0.0393
+    selective            bpb=1.3175 (lr=0.003, n=1)  dREF=-0.0226
+    selective_control    bpb=1.3370 (lr=0.003, n=1)  dREF=-0.0031
+    REF                  bpb=1.3401 (lr=0.003, n=1)  dREF=+0.0000
+    ablate_phase         bpb=1.3485 (lr=0.003, n=1)  dREF=+0.0084
+    no_mix               bpb=1.7951 (lr=0.003, n=1)  dREF=+0.4550
+    ablate_saturation    bpb=1.9993 (lr=0.003, n=1)  dREF=+0.6592
+    real_twin            bpb=3.7082 (lr=0.003, n=1)  dREF=+2.3681
+
+wrote checkpoints/ablation/ablation_results.json

@@ -1,0 +1,301 @@
+<home>\.pyenv\pyenv-win\versions\3.11.2\Lib\site-packages\torch\nn\modules\module.py:1341: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:28.)
+  return t.to(
+==============================================================================
+  WaveLM  |  byte-level (V=256)  |  params(complex-counted)=99,459
+  d=384 T=1024 n_sub=16 delta=2 L_cyc=10 batch=96
+  device=cuda  steps=5000  Var0(omega)=3.2898
+==============================================================================
+Step      1/5000 [WaveLM] | bpb=9.449 CE=6.549 | 36,920 tok/s grad=12.10 GPU=10.2G lr=1.20e-06 Var(w)=3.290 lam_w=0.000 ETA=225.3m
+Step     20/5000 [WaveLM] | bpb=9.080 CE=6.294 | 59,235 tok/s grad=11.96 GPU=10.2G lr=2.40e-05 Var(w)=3.290 lam_w=0.000 ETA=142.1m
+Step     40/5000 [WaveLM] | bpb=8.085 CE=5.604 | 59,240 tok/s grad=11.02 GPU=10.2G lr=4.80e-05 Var(w)=3.290 lam_w=0.000 ETA=139.3m
+Step     60/5000 [WaveLM] | bpb=7.281 CE=5.047 | 59,250 tok/s grad=4.21 GPU=10.2G lr=7.20e-05 Var(w)=3.289 lam_w=0.000 ETA=138.1m
+Step     80/5000 [WaveLM] | bpb=6.716 CE=4.655 | 59,241 tok/s grad=2.24 GPU=10.2G lr=9.60e-05 Var(w)=3.289 lam_w=0.000 ETA=137.1m
+Step    100/5000 [WaveLM] | bpb=6.286 CE=4.357 | 59,266 tok/s grad=2.02 GPU=10.2G lr=1.20e-04 Var(w)=3.289 lam_w=0.000 ETA=136.4m
+Step    120/5000 [WaveLM] | bpb=5.890 CE=4.083 | 59,267 tok/s grad=2.26 GPU=10.2G lr=1.44e-04 Var(w)=3.288 lam_w=0.000 ETA=135.7m
+Step    140/5000 [WaveLM] | bpb=5.505 CE=3.816 | 59,261 tok/s grad=2.19 GPU=10.2G lr=1.68e-04 Var(w)=3.288 lam_w=0.000 ETA=135.0m
+Step    160/5000 [WaveLM] | bpb=5.166 CE=3.581 | 59,253 tok/s grad=1.60 GPU=10.2G lr=1.92e-04 Var(w)=3.287 lam_w=0.000 ETA=134.4m
+Step    180/5000 [WaveLM] | bpb=4.900 CE=3.396 | 59,246 tok/s grad=1.94 GPU=10.2G lr=2.16e-04 Var(w)=3.287 lam_w=0.000 ETA=133.7m
+Step    200/5000 [WaveLM] | bpb=4.605 CE=3.192 | 59,252 tok/s grad=1.57 GPU=10.2G lr=2.40e-04 Var(w)=3.287 lam_w=0.000 ETA=133.1m
+Step    220/5000 [WaveLM] | bpb=4.341 CE=3.009 | 59,222 tok/s grad=1.55 GPU=10.2G lr=2.64e-04 Var(w)=3.287 lam_w=0.000 ETA=132.6m
+Step    240/5000 [WaveLM] | bpb=4.066 CE=2.818 | 59,182 tok/s grad=1.53 GPU=10.2G lr=2.88e-04 Var(w)=3.288 lam_w=0.000 ETA=132.0m
+  >>> VAL step 250: 3.960 bits/byte
+  >>> new best 3.960 bpb -> best.pt
+Step    260/5000 [WaveLM] | bpb=3.862 CE=2.677 | 51,409 tok/s grad=1.11 GPU=10.2G lr=3.00e-04 Var(w)=3.288 lam_w=0.000 ETA=132.9m
+Step    280/5000 [WaveLM] | bpb=3.679 CE=2.550 | 59,244 tok/s grad=2.77 GPU=10.2G lr=3.00e-04 Var(w)=3.288 lam_w=0.000 ETA=132.2m
+Step    300/5000 [WaveLM] | bpb=3.547 CE=2.458 | 59,252 tok/s grad=1.50 GPU=10.2G lr=3.00e-04 Var(w)=3.288 lam_w=0.000 ETA=131.6m
+Step    320/5000 [WaveLM] | bpb=3.418 CE=2.369 | 59,265 tok/s grad=2.18 GPU=10.2G lr=3.00e-04 Var(w)=3.288 lam_w=0.000 ETA=130.9m
+Step    340/5000 [WaveLM] | bpb=3.254 CE=2.256 | 59,239 tok/s grad=1.89 GPU=10.2G lr=3.00e-04 Var(w)=3.287 lam_w=0.000 ETA=130.3m
+Step    360/5000 [WaveLM] | bpb=3.165 CE=2.193 | 59,445 tok/s grad=1.48 GPU=10.2G lr=3.00e-04 Var(w)=3.287 lam_w=0.000 ETA=129.6m
+Step    380/5000 [WaveLM] | bpb=3.076 CE=2.132 | 59,520 tok/s grad=1.05 GPU=10.2G lr=3.00e-04 Var(w)=3.287 lam_w=0.000 ETA=128.9m
+Step    400/5000 [WaveLM] | bpb=3.013 CE=2.088 | 59,519 tok/s grad=1.17 GPU=10.2G lr=2.99e-04 Var(w)=3.287 lam_w=0.000 ETA=128.3m
+Step    420/5000 [WaveLM] | bpb=2.914 CE=2.020 | 59,525 tok/s grad=1.16 GPU=10.2G lr=2.99e-04 Var(w)=3.286 lam_w=0.000 ETA=127.7m
+Step    440/5000 [WaveLM] | bpb=2.903 CE=2.012 | 59,531 tok/s grad=1.94 GPU=10.2G lr=2.99e-04 Var(w)=3.286 lam_w=0.000 ETA=127.0m
+Step    460/5000 [WaveLM] | bpb=2.819 CE=1.954 | 59,518 tok/s grad=1.28 GPU=10.2G lr=2.99e-04 Var(w)=3.286 lam_w=0.000 ETA=126.4m
+Step    480/5000 [WaveLM] | bpb=2.768 CE=1.919 | 59,520 tok/s grad=1.70 GPU=10.2G lr=2.98e-04 Var(w)=3.286 lam_w=0.000 ETA=125.8m
+Step    500/5000 [WaveLM] | bpb=2.736 CE=1.897 | 59,520 tok/s grad=1.82 GPU=10.2G lr=2.98e-04 Var(w)=3.286 lam_w=0.000 ETA=125.2m
+  >>> VAL step 500: 2.709 bits/byte
+  >>> new best 2.709 bpb -> best.pt
+Step    520/5000 [WaveLM] | bpb=2.650 CE=1.837 | 51,676 tok/s grad=2.26 GPU=10.2G lr=2.98e-04 Var(w)=3.286 lam_w=0.000 ETA=125.3m
+Step    540/5000 [WaveLM] | bpb=2.635 CE=1.827 | 59,522 tok/s grad=1.61 GPU=10.2G lr=2.98e-04 Var(w)=3.286 lam_w=0.000 ETA=124.7m
+Step    560/5000 [WaveLM] | bpb=2.618 CE=1.814 | 59,526 tok/s grad=1.40 GPU=10.2G lr=2.97e-04 Var(w)=3.286 lam_w=0.000 ETA=124.0m
+Step    580/5000 [WaveLM] | bpb=2.568 CE=1.780 | 59,522 tok/s grad=1.99 GPU=10.2G lr=2.97e-04 Var(w)=3.286 lam_w=0.000 ETA=123.4m
+Step    600/5000 [WaveLM] | bpb=2.504 CE=1.736 | 59,520 tok/s grad=2.24 GPU=10.2G lr=2.96e-04 Var(w)=3.286 lam_w=0.000 ETA=122.8m
+Step    620/5000 [WaveLM] | bpb=2.495 CE=1.730 | 59,515 tok/s grad=2.03 GPU=10.2G lr=2.96e-04 Var(w)=3.286 lam_w=0.000 ETA=122.2m
+Step    640/5000 [WaveLM] | bpb=2.489 CE=1.725 | 59,527 tok/s grad=1.51 GPU=10.2G lr=2.96e-04 Var(w)=3.286 lam_w=0.000 ETA=121.6m
+Step    660/5000 [WaveLM] | bpb=2.460 CE=1.705 | 59,528 tok/s grad=1.86 GPU=10.2G lr=2.95e-04 Var(w)=3.285 lam_w=0.000 ETA=121.0m
+Step    680/5000 [WaveLM] | bpb=2.421 CE=1.678 | 59,526 tok/s grad=1.66 GPU=10.2G lr=2.95e-04 Var(w)=3.285 lam_w=0.000 ETA=120.4m
+Step    700/5000 [WaveLM] | bpb=2.426 CE=1.681 | 59,527 tok/s grad=2.23 GPU=10.2G lr=2.94e-04 Var(w)=3.285 lam_w=0.000 ETA=119.8m
+Step    720/5000 [WaveLM] | bpb=2.386 CE=1.654 | 59,522 tok/s grad=2.25 GPU=10.2G lr=2.94e-04 Var(w)=3.285 lam_w=0.000 ETA=119.2m
+Step    740/5000 [WaveLM] | bpb=2.385 CE=1.653 | 59,520 tok/s grad=2.24 GPU=10.2G lr=2.93e-04 Var(w)=3.285 lam_w=0.000 ETA=118.6m
+  >>> VAL step 750: 2.365 bits/byte
+  >>> new best 2.365 bpb -> best.pt
+Step    760/5000 [WaveLM] | bpb=2.340 CE=1.622 | 51,672 tok/s grad=2.34 GPU=10.2G lr=2.92e-04 Var(w)=3.285 lam_w=0.000 ETA=118.5m
+Step    780/5000 [WaveLM] | bpb=2.342 CE=1.623 | 59,524 tok/s grad=2.34 GPU=10.2G lr=2.92e-04 Var(w)=3.285 lam_w=0.000 ETA=117.9m
+Step    800/5000 [WaveLM] | bpb=2.330 CE=1.615 | 59,523 tok/s grad=1.92 GPU=10.2G lr=2.91e-04 Var(w)=3.285 lam_w=0.000 ETA=117.3m
+Step    820/5000 [WaveLM] | bpb=2.311 CE=1.602 | 59,524 tok/s grad=1.53 GPU=10.2G lr=2.91e-04 Var(w)=3.285 lam_w=0.000 ETA=116.7m
+Step    840/5000 [WaveLM] | bpb=2.300 CE=1.595 | 59,530 tok/s grad=1.82 GPU=10.2G lr=2.90e-04 Var(w)=3.284 lam_w=0.000 ETA=116.1m
+Step    860/5000 [WaveLM] | bpb=2.308 CE=1.600 | 59,524 tok/s grad=2.52 GPU=10.2G lr=2.89e-04 Var(w)=3.284 lam_w=0.000 ETA=115.5m
+Step    880/5000 [WaveLM] | bpb=2.275 CE=1.577 | 59,520 tok/s grad=1.85 GPU=10.2G lr=2.88e-04 Var(w)=3.284 lam_w=0.000 ETA=114.9m
+Step    900/5000 [WaveLM] | bpb=2.266 CE=1.571 | 59,521 tok/s grad=1.73 GPU=10.2G lr=2.88e-04 Var(w)=3.284 lam_w=0.000 ETA=114.3m
+Step    920/5000 [WaveLM] | bpb=2.245 CE=1.556 | 59,528 tok/s grad=1.48 GPU=10.2G lr=2.87e-04 Var(w)=3.284 lam_w=0.000 ETA=113.7m
+Step    940/5000 [WaveLM] | bpb=2.195 CE=1.522 | 59,519 tok/s grad=1.79 GPU=10.2G lr=2.86e-04 Var(w)=3.284 lam_w=0.000 ETA=113.1m
+Step    960/5000 [WaveLM] | bpb=2.242 CE=1.554 | 59,526 tok/s grad=2.11 GPU=10.2G lr=2.85e-04 Var(w)=3.284 lam_w=0.000 ETA=112.5m
+Step    980/5000 [WaveLM] | bpb=2.185 CE=1.514 | 59,531 tok/s grad=1.65 GPU=10.2G lr=2.85e-04 Var(w)=3.284 lam_w=0.000 ETA=111.9m
+Step   1000/5000 [WaveLM] | bpb=2.197 CE=1.523 | 59,525 tok/s grad=1.54 GPU=10.2G lr=2.84e-04 Var(w)=3.284 lam_w=0.000 ETA=111.4m
+  >>> VAL step 1000: 2.207 bits/byte
+  >>> new best 2.207 bpb -> best.pt
+Step   1020/5000 [WaveLM] | bpb=2.202 CE=1.527 | 51,481 tok/s grad=1.99 GPU=10.2G lr=2.83e-04 Var(w)=3.284 lam_w=0.000 ETA=111.1m
+Step   1040/5000 [WaveLM] | bpb=2.191 CE=1.519 | 59,262 tok/s grad=1.55 GPU=10.2G lr=2.82e-04 Var(w)=3.283 lam_w=0.000 ETA=110.5m
+Step   1060/5000 [WaveLM] | bpb=2.189 CE=1.518 | 59,261 tok/s grad=1.55 GPU=10.2G lr=2.81e-04 Var(w)=3.283 lam_w=0.000 ETA=110.0m
+Step   1080/5000 [WaveLM] | bpb=2.169 CE=1.503 | 59,232 tok/s grad=2.12 GPU=10.2G lr=2.80e-04 Var(w)=3.283 lam_w=0.000 ETA=109.4m
+Step   1100/5000 [WaveLM] | bpb=2.164 CE=1.500 | 59,195 tok/s grad=2.00 GPU=10.2G lr=2.79e-04 Var(w)=3.283 lam_w=0.000 ETA=108.8m
+Step   1120/5000 [WaveLM] | bpb=2.144 CE=1.486 | 59,179 tok/s grad=2.13 GPU=10.2G lr=2.78e-04 Var(w)=3.283 lam_w=0.000 ETA=108.2m
+Step   1140/5000 [WaveLM] | bpb=2.163 CE=1.499 | 59,200 tok/s grad=2.05 GPU=10.2G lr=2.77e-04 Var(w)=3.283 lam_w=0.000 ETA=107.7m
+Step   1160/5000 [WaveLM] | bpb=2.158 CE=1.496 | 59,250 tok/s grad=2.06 GPU=10.2G lr=2.76e-04 Var(w)=3.283 lam_w=0.000 ETA=107.1m
+Step   1180/5000 [WaveLM] | bpb=2.149 CE=1.490 | 59,249 tok/s grad=2.67 GPU=10.2G lr=2.75e-04 Var(w)=3.283 lam_w=0.000 ETA=106.5m
+Step   1200/5000 [WaveLM] | bpb=2.144 CE=1.486 | 59,221 tok/s grad=1.99 GPU=10.2G lr=2.74e-04 Var(w)=3.283 lam_w=0.000 ETA=105.9m
+Step   1220/5000 [WaveLM] | bpb=2.128 CE=1.475 | 59,260 tok/s grad=2.28 GPU=10.2G lr=2.73e-04 Var(w)=3.283 lam_w=0.000 ETA=105.4m
+Step   1240/5000 [WaveLM] | bpb=2.108 CE=1.461 | 59,238 tok/s grad=2.37 GPU=10.2G lr=2.72e-04 Var(w)=3.282 lam_w=0.000 ETA=104.8m
+  >>> VAL step 1250: 2.124 bits/byte
+  >>> new best 2.124 bpb -> best.pt
+Step   1260/5000 [WaveLM] | bpb=2.142 CE=1.485 | 51,441 tok/s grad=2.18 GPU=10.2G lr=2.71e-04 Var(w)=3.282 lam_w=0.000 ETA=104.5m
+Step   1280/5000 [WaveLM] | bpb=2.112 CE=1.464 | 59,417 tok/s grad=2.62 GPU=10.2G lr=2.70e-04 Var(w)=3.282 lam_w=0.000 ETA=103.9m
+Step   1300/5000 [WaveLM] | bpb=2.140 CE=1.483 | 59,522 tok/s grad=2.79 GPU=10.2G lr=2.69e-04 Var(w)=3.282 lam_w=0.000 ETA=103.3m
+Step   1320/5000 [WaveLM] | bpb=2.119 CE=1.469 | 59,522 tok/s grad=1.95 GPU=10.2G lr=2.68e-04 Var(w)=3.282 lam_w=0.000 ETA=102.7m
+Step   1340/5000 [WaveLM] | bpb=2.108 CE=1.461 | 59,525 tok/s grad=2.50 GPU=10.2G lr=2.66e-04 Var(w)=3.282 lam_w=0.000 ETA=102.2m
+Step   1360/5000 [WaveLM] | bpb=2.110 CE=1.463 | 59,528 tok/s grad=1.72 GPU=10.2G lr=2.65e-04 Var(w)=3.282 lam_w=0.000 ETA=101.6m
+Step   1380/5000 [WaveLM] | bpb=2.122 CE=1.471 | 59,530 tok/s grad=2.60 GPU=10.2G lr=2.64e-04 Var(w)=3.282 lam_w=0.000 ETA=101.0m
+Step   1400/5000 [WaveLM] | bpb=2.136 CE=1.481 | 59,525 tok/s grad=2.15 GPU=10.2G lr=2.63e-04 Var(w)=3.282 lam_w=0.000 ETA=100.4m
+Step   1420/5000 [WaveLM] | bpb=2.095 CE=1.452 | 59,531 tok/s grad=2.00 GPU=10.2G lr=2.62e-04 Var(w)=3.282 lam_w=0.000 ETA=99.8m
+Step   1440/5000 [WaveLM] | bpb=2.069 CE=1.434 | 59,528 tok/s grad=2.29 GPU=10.2G lr=2.60e-04 Var(w)=3.282 lam_w=0.000 ETA=99.3m
+Step   1460/5000 [WaveLM] | bpb=2.071 CE=1.435 | 59,527 tok/s grad=3.06 GPU=10.2G lr=2.59e-04 Var(w)=3.282 lam_w=0.000 ETA=98.7m
+Step   1480/5000 [WaveLM] | bpb=2.083 CE=1.444 | 59,531 tok/s grad=1.96 GPU=10.2G lr=2.58e-04 Var(w)=3.282 lam_w=0.000 ETA=98.1m
+Step   1500/5000 [WaveLM] | bpb=2.114 CE=1.465 | 59,528 tok/s grad=2.51 GPU=10.2G lr=2.56e-04 Var(w)=3.282 lam_w=0.000 ETA=97.5m
+  >>> VAL step 1500: 2.073 bits/byte
+  >>> new best 2.073 bpb -> best.pt
+Step   1520/5000 [WaveLM] | bpb=2.072 CE=1.436 | 51,672 tok/s grad=2.04 GPU=10.2G lr=2.55e-04 Var(w)=3.282 lam_w=0.000 ETA=97.2m
+Step   1540/5000 [WaveLM] | bpb=2.061 CE=1.428 | 59,528 tok/s grad=2.39 GPU=10.2G lr=2.54e-04 Var(w)=3.281 lam_w=0.000 ETA=96.6m
+Step   1560/5000 [WaveLM] | bpb=2.051 CE=1.422 | 59,527 tok/s grad=2.34 GPU=10.2G lr=2.52e-04 Var(w)=3.281 lam_w=0.000 ETA=96.0m
+Step   1580/5000 [WaveLM] | bpb=2.084 CE=1.444 | 59,527 tok/s grad=2.10 GPU=10.2G lr=2.51e-04 Var(w)=3.281 lam_w=0.000 ETA=95.4m
+Step   1600/5000 [WaveLM] | bpb=2.043 CE=1.416 | 59,530 tok/s grad=2.13 GPU=10.2G lr=2.50e-04 Var(w)=3.281 lam_w=0.000 ETA=94.9m
+Step   1620/5000 [WaveLM] | bpb=2.065 CE=1.431 | 59,526 tok/s grad=3.36 GPU=10.2G lr=2.48e-04 Var(w)=3.281 lam_w=0.000 ETA=94.3m
+Step   1640/5000 [WaveLM] | bpb=2.036 CE=1.411 | 59,530 tok/s grad=2.49 GPU=10.2G lr=2.47e-04 Var(w)=3.281 lam_w=0.000 ETA=93.7m
+Step   1660/5000 [WaveLM] | bpb=2.027 CE=1.405 | 59,528 tok/s grad=2.51 GPU=10.2G lr=2.45e-04 Var(w)=3.281 lam_w=0.000 ETA=93.1m
+Step   1680/5000 [WaveLM] | bpb=2.053 CE=1.423 | 59,529 tok/s grad=2.44 GPU=10.2G lr=2.44e-04 Var(w)=3.281 lam_w=0.000 ETA=92.6m
+Step   1700/5000 [WaveLM] | bpb=2.075 CE=1.439 | 59,525 tok/s grad=2.53 GPU=10.2G lr=2.43e-04 Var(w)=3.281 lam_w=0.000 ETA=92.0m
+Step   1720/5000 [WaveLM] | bpb=2.056 CE=1.425 | 59,527 tok/s grad=2.45 GPU=10.2G lr=2.41e-04 Var(w)=3.281 lam_w=0.000 ETA=91.4m
+Step   1740/5000 [WaveLM] | bpb=2.064 CE=1.431 | 59,522 tok/s grad=2.56 GPU=10.2G lr=2.40e-04 Var(w)=3.281 lam_w=0.000 ETA=90.9m
+  >>> VAL step 1750: 2.038 bits/byte
+  >>> new best 2.038 bpb -> best.pt
+Step   1760/5000 [WaveLM] | bpb=2.052 CE=1.422 | 51,667 tok/s grad=2.76 GPU=10.2G lr=2.38e-04 Var(w)=3.281 lam_w=0.000 ETA=90.4m
+Step   1780/5000 [WaveLM] | bpb=2.034 CE=1.410 | 59,529 tok/s grad=2.67 GPU=10.2G lr=2.37e-04 Var(w)=3.281 lam_w=0.000 ETA=89.9m
+Step   1800/5000 [WaveLM] | bpb=2.018 CE=1.399 | 59,523 tok/s grad=2.35 GPU=10.2G lr=2.35e-04 Var(w)=3.281 lam_w=0.000 ETA=89.3m
+Step   1820/5000 [WaveLM] | bpb=2.006 CE=1.390 | 59,523 tok/s grad=2.86 GPU=10.2G lr=2.34e-04 Var(w)=3.280 lam_w=0.000 ETA=88.7m
+Step   1840/5000 [WaveLM] | bpb=2.051 CE=1.422 | 59,525 tok/s grad=2.70 GPU=10.2G lr=2.32e-04 Var(w)=3.280 lam_w=0.000 ETA=88.2m
+Step   1860/5000 [WaveLM] | bpb=2.028 CE=1.406 | 59,531 tok/s grad=2.74 GPU=10.2G lr=2.30e-04 Var(w)=3.280 lam_w=0.000 ETA=87.6m
+Step   1880/5000 [WaveLM] | bpb=2.023 CE=1.403 | 59,527 tok/s grad=3.56 GPU=10.2G lr=2.29e-04 Var(w)=3.280 lam_w=0.000 ETA=87.0m
+Step   1900/5000 [WaveLM] | bpb=2.028 CE=1.406 | 59,528 tok/s grad=2.61 GPU=10.2G lr=2.27e-04 Var(w)=3.280 lam_w=0.000 ETA=86.4m
+Step   1920/5000 [WaveLM] | bpb=2.016 CE=1.397 | 59,529 tok/s grad=2.71 GPU=10.2G lr=2.26e-04 Var(w)=3.280 lam_w=0.000 ETA=85.9m
+Step   1940/5000 [WaveLM] | bpb=2.018 CE=1.399 | 59,526 tok/s grad=2.57 GPU=10.2G lr=2.24e-04 Var(w)=3.280 lam_w=0.000 ETA=85.3m
+Step   1960/5000 [WaveLM] | bpb=2.038 CE=1.412 | 59,526 tok/s grad=3.27 GPU=10.2G lr=2.22e-04 Var(w)=3.280 lam_w=0.000 ETA=84.7m
+Step   1980/5000 [WaveLM] | bpb=2.041 CE=1.414 | 59,519 tok/s grad=2.78 GPU=10.2G lr=2.21e-04 Var(w)=3.280 lam_w=0.000 ETA=84.2m
+Step   2000/5000 [WaveLM] | bpb=2.052 CE=1.422 | 59,523 tok/s grad=2.55 GPU=10.2G lr=2.19e-04 Var(w)=3.280 lam_w=0.000 ETA=83.6m
+  >>> VAL step 2000: 2.015 bits/byte
+  >>> new best 2.015 bpb -> best.pt
+Step   2020/5000 [WaveLM] | bpb=2.016 CE=1.398 | 51,667 tok/s grad=3.37 GPU=10.2G lr=2.18e-04 Var(w)=3.280 lam_w=0.000 ETA=83.2m
+Step   2040/5000 [WaveLM] | bpb=2.033 CE=1.409 | 59,524 tok/s grad=3.26 GPU=10.2G lr=2.16e-04 Var(w)=3.280 lam_w=0.000 ETA=82.6m
+Step   2060/5000 [WaveLM] | bpb=2.009 CE=1.392 | 59,528 tok/s grad=3.24 GPU=10.2G lr=2.14e-04 Var(w)=3.280 lam_w=0.000 ETA=82.0m
+Step   2080/5000 [WaveLM] | bpb=2.028 CE=1.406 | 59,529 tok/s grad=2.64 GPU=10.2G lr=2.13e-04 Var(w)=3.280 lam_w=0.000 ETA=81.5m
+Step   2100/5000 [WaveLM] | bpb=2.006 CE=1.390 | 59,530 tok/s grad=2.79 GPU=10.2G lr=2.11e-04 Var(w)=3.280 lam_w=0.000 ETA=80.9m
+Step   2120/5000 [WaveLM] | bpb=2.024 CE=1.403 | 59,527 tok/s grad=2.51 GPU=10.2G lr=2.09e-04 Var(w)=3.280 lam_w=0.000 ETA=80.3m
+Step   2140/5000 [WaveLM] | bpb=2.004 CE=1.389 | 59,526 tok/s grad=2.79 GPU=10.2G lr=2.08e-04 Var(w)=3.280 lam_w=0.000 ETA=79.7m
+Step   2160/5000 [WaveLM] | bpb=2.027 CE=1.405 | 59,528 tok/s grad=3.20 GPU=10.2G lr=2.06e-04 Var(w)=3.280 lam_w=0.000 ETA=79.2m
+Step   2180/5000 [WaveLM] | bpb=2.005 CE=1.390 | 59,531 tok/s grad=2.66 GPU=10.2G lr=2.04e-04 Var(w)=3.280 lam_w=0.000 ETA=78.6m
+Step   2200/5000 [WaveLM] | bpb=1.981 CE=1.373 | 59,524 tok/s grad=2.84 GPU=10.2G lr=2.02e-04 Var(w)=3.279 lam_w=0.000 ETA=78.0m
+Step   2220/5000 [WaveLM] | bpb=1.995 CE=1.383 | 59,532 tok/s grad=3.99 GPU=10.2G lr=2.01e-04 Var(w)=3.279 lam_w=0.000 ETA=77.5m
+Step   2240/5000 [WaveLM] | bpb=1.981 CE=1.373 | 59,527 tok/s grad=2.48 GPU=10.2G lr=1.99e-04 Var(w)=3.279 lam_w=0.000 ETA=76.9m
+  >>> VAL step 2250: 1.998 bits/byte
+  >>> new best 1.998 bpb -> best.pt
+Step   2260/5000 [WaveLM] | bpb=2.023 CE=1.402 | 51,674 tok/s grad=3.53 GPU=10.2G lr=1.97e-04 Var(w)=3.279 lam_w=0.000 ETA=76.5m
+Step   2280/5000 [WaveLM] | bpb=1.977 CE=1.370 | 59,529 tok/s grad=2.93 GPU=10.2G lr=1.96e-04 Var(w)=3.279 lam_w=0.000 ETA=75.9m
+Step   2300/5000 [WaveLM] | bpb=2.014 CE=1.396 | 59,526 tok/s grad=3.41 GPU=10.2G lr=1.94e-04 Var(w)=3.279 lam_w=0.000 ETA=75.3m
+Step   2320/5000 [WaveLM] | bpb=1.967 CE=1.364 | 59,534 tok/s grad=2.80 GPU=10.2G lr=1.92e-04 Var(w)=3.279 lam_w=0.000 ETA=74.7m
+Step   2340/5000 [WaveLM] | bpb=1.988 CE=1.378 | 59,524 tok/s grad=2.91 GPU=10.2G lr=1.90e-04 Var(w)=3.279 lam_w=0.000 ETA=74.2m
+Step   2360/5000 [WaveLM] | bpb=1.989 CE=1.379 | 59,526 tok/s grad=3.40 GPU=10.2G lr=1.89e-04 Var(w)=3.279 lam_w=0.000 ETA=73.6m
+Step   2380/5000 [WaveLM] | bpb=1.981 CE=1.373 | 59,529 tok/s grad=2.99 GPU=10.2G lr=1.87e-04 Var(w)=3.279 lam_w=0.000 ETA=73.1m
+Step   2400/5000 [WaveLM] | bpb=2.009 CE=1.393 | 59,528 tok/s grad=2.89 GPU=10.2G lr=1.85e-04 Var(w)=3.279 lam_w=0.000 ETA=72.5m
+Step   2420/5000 [WaveLM] | bpb=1.999 CE=1.386 | 59,530 tok/s grad=3.18 GPU=10.2G lr=1.83e-04 Var(w)=3.279 lam_w=0.000 ETA=71.9m
+Step   2440/5000 [WaveLM] | bpb=2.004 CE=1.389 | 59,527 tok/s grad=3.39 GPU=10.2G lr=1.81e-04 Var(w)=3.279 lam_w=0.000 ETA=71.4m
+Step   2460/5000 [WaveLM] | bpb=2.022 CE=1.402 | 59,527 tok/s grad=3.00 GPU=10.2G lr=1.80e-04 Var(w)=3.279 lam_w=0.000 ETA=70.8m
+Step   2480/5000 [WaveLM] | bpb=2.010 CE=1.393 | 59,528 tok/s grad=3.21 GPU=10.2G lr=1.78e-04 Var(w)=3.279 lam_w=0.000 ETA=70.2m
+Step   2500/5000 [WaveLM] | bpb=2.024 CE=1.403 | 59,528 tok/s grad=2.80 GPU=10.2G lr=1.76e-04 Var(w)=3.279 lam_w=0.000 ETA=69.7m
+  >>> VAL step 2500: 1.982 bits/byte
+  >>> new best 1.982 bpb -> best.pt
+Step   2520/5000 [WaveLM] | bpb=1.999 CE=1.386 | 51,673 tok/s grad=2.81 GPU=10.2G lr=1.74e-04 Var(w)=3.279 lam_w=0.000 ETA=69.2m
+Step   2540/5000 [WaveLM] | bpb=1.997 CE=1.384 | 59,529 tok/s grad=2.94 GPU=10.2G lr=1.73e-04 Var(w)=3.279 lam_w=0.000 ETA=68.6m
+Step   2560/5000 [WaveLM] | bpb=1.998 CE=1.385 | 59,525 tok/s grad=3.45 GPU=10.2G lr=1.71e-04 Var(w)=3.279 lam_w=0.000 ETA=68.1m
+Step   2580/5000 [WaveLM] | bpb=1.960 CE=1.359 | 59,528 tok/s grad=3.04 GPU=10.2G lr=1.69e-04 Var(w)=3.279 lam_w=0.000 ETA=67.5m
+Step   2600/5000 [WaveLM] | bpb=1.944 CE=1.347 | 59,529 tok/s grad=3.00 GPU=10.2G lr=1.67e-04 Var(w)=3.278 lam_w=0.000 ETA=66.9m
+Step   2620/5000 [WaveLM] | bpb=2.004 CE=1.389 | 59,531 tok/s grad=3.75 GPU=10.2G lr=1.65e-04 Var(w)=3.278 lam_w=0.000 ETA=66.4m
+Step   2640/5000 [WaveLM] | bpb=2.003 CE=1.388 | 59,525 tok/s grad=3.33 GPU=10.2G lr=1.64e-04 Var(w)=3.278 lam_w=0.000 ETA=65.8m
+Step   2660/5000 [WaveLM] | bpb=1.967 CE=1.363 | 59,529 tok/s grad=3.47 GPU=10.2G lr=1.62e-04 Var(w)=3.278 lam_w=0.000 ETA=65.2m
+Step   2680/5000 [WaveLM] | bpb=2.004 CE=1.389 | 59,527 tok/s grad=3.37 GPU=10.2G lr=1.60e-04 Var(w)=3.278 lam_w=0.000 ETA=64.7m
+Step   2700/5000 [WaveLM] | bpb=1.972 CE=1.367 | 59,531 tok/s grad=3.45 GPU=10.2G lr=1.58e-04 Var(w)=3.278 lam_w=0.000 ETA=64.1m
+Step   2720/5000 [WaveLM] | bpb=1.985 CE=1.376 | 59,528 tok/s grad=3.09 GPU=10.2G lr=1.57e-04 Var(w)=3.278 lam_w=0.000 ETA=63.5m
+Step   2740/5000 [WaveLM] | bpb=1.979 CE=1.372 | 59,527 tok/s grad=2.73 GPU=10.2G lr=1.55e-04 Var(w)=3.278 lam_w=0.000 ETA=63.0m
+  >>> VAL step 2750: 1.973 bits/byte
+  >>> new best 1.973 bpb -> best.pt
+Step   2760/5000 [WaveLM] | bpb=1.957 CE=1.356 | 51,675 tok/s grad=3.07 GPU=10.2G lr=1.53e-04 Var(w)=3.278 lam_w=0.000 ETA=62.5m
+Step   2780/5000 [WaveLM] | bpb=1.957 CE=1.357 | 59,525 tok/s grad=2.89 GPU=10.2G lr=1.51e-04 Var(w)=3.278 lam_w=0.000 ETA=61.9m
+Step   2800/5000 [WaveLM] | bpb=1.992 CE=1.381 | 59,529 tok/s grad=2.80 GPU=10.2G lr=1.49e-04 Var(w)=3.278 lam_w=0.000 ETA=61.4m
+Step   2820/5000 [WaveLM] | bpb=1.974 CE=1.368 | 59,527 tok/s grad=3.13 GPU=10.2G lr=1.48e-04 Var(w)=3.278 lam_w=0.000 ETA=60.8m
+Step   2840/5000 [WaveLM] | bpb=2.008 CE=1.392 | 59,529 tok/s grad=3.21 GPU=10.2G lr=1.46e-04 Var(w)=3.278 lam_w=0.000 ETA=60.2m
+Step   2860/5000 [WaveLM] | bpb=1.962 CE=1.360 | 59,530 tok/s grad=2.80 GPU=10.2G lr=1.44e-04 Var(w)=3.278 lam_w=0.000 ETA=59.7m
+Step   2880/5000 [WaveLM] | bpb=1.975 CE=1.369 | 59,526 tok/s grad=3.85 GPU=10.2G lr=1.42e-04 Var(w)=3.278 lam_w=0.000 ETA=59.1m
+Step   2900/5000 [WaveLM] | bpb=1.971 CE=1.366 | 59,527 tok/s grad=3.05 GPU=10.2G lr=1.41e-04 Var(w)=3.278 lam_w=0.000 ETA=58.5m
+Step   2920/5000 [WaveLM] | bpb=1.981 CE=1.373 | 59,530 tok/s grad=3.70 GPU=10.2G lr=1.39e-04 Var(w)=3.278 lam_w=0.000 ETA=58.0m
+Step   2940/5000 [WaveLM] | bpb=1.959 CE=1.358 | 59,529 tok/s grad=2.92 GPU=10.2G lr=1.37e-04 Var(w)=3.278 lam_w=0.000 ETA=57.4m
+Step   2960/5000 [WaveLM] | bpb=1.935 CE=1.341 | 59,530 tok/s grad=3.32 GPU=10.2G lr=1.35e-04 Var(w)=3.278 lam_w=0.000 ETA=56.9m
+Step   2980/5000 [WaveLM] | bpb=1.976 CE=1.370 | 59,529 tok/s grad=3.25 GPU=10.2G lr=1.34e-04 Var(w)=3.278 lam_w=0.000 ETA=56.3m
+Step   3000/5000 [WaveLM] | bpb=1.965 CE=1.362 | 59,523 tok/s grad=3.17 GPU=10.2G lr=1.32e-04 Var(w)=3.277 lam_w=0.000 ETA=55.7m
+  >>> VAL step 3000: 1.963 bits/byte
+  >>> new best 1.963 bpb -> best.pt
+Step   3020/5000 [WaveLM] | bpb=1.964 CE=1.361 | 51,674 tok/s grad=3.93 GPU=10.2G lr=1.30e-04 Var(w)=3.277 lam_w=0.000 ETA=55.2m
+Step   3040/5000 [WaveLM] | bpb=1.961 CE=1.359 | 59,526 tok/s grad=3.11 GPU=10.2G lr=1.28e-04 Var(w)=3.277 lam_w=0.000 ETA=54.7m
+Step   3060/5000 [WaveLM] | bpb=1.933 CE=1.340 | 59,525 tok/s grad=3.31 GPU=10.2G lr=1.27e-04 Var(w)=3.277 lam_w=0.000 ETA=54.1m
+Step   3080/5000 [WaveLM] | bpb=1.977 CE=1.370 | 59,524 tok/s grad=3.15 GPU=10.2G lr=1.25e-04 Var(w)=3.277 lam_w=0.000 ETA=53.5m
+Step   3100/5000 [WaveLM] | bpb=1.970 CE=1.366 | 59,526 tok/s grad=3.37 GPU=10.2G lr=1.23e-04 Var(w)=3.277 lam_w=0.000 ETA=53.0m
+Step   3120/5000 [WaveLM] | bpb=1.957 CE=1.357 | 59,521 tok/s grad=3.91 GPU=10.2G lr=1.22e-04 Var(w)=3.277 lam_w=0.000 ETA=52.4m
+Step   3140/5000 [WaveLM] | bpb=1.959 CE=1.358 | 59,522 tok/s grad=3.06 GPU=10.2G lr=1.20e-04 Var(w)=3.277 lam_w=0.000 ETA=51.8m
+Step   3160/5000 [WaveLM] | bpb=1.940 CE=1.345 | 59,525 tok/s grad=3.34 GPU=10.2G lr=1.18e-04 Var(w)=3.277 lam_w=0.000 ETA=51.3m
+Step   3180/5000 [WaveLM] | bpb=1.959 CE=1.358 | 59,524 tok/s grad=3.00 GPU=10.2G lr=1.17e-04 Var(w)=3.277 lam_w=0.000 ETA=50.7m
+Step   3200/5000 [WaveLM] | bpb=1.973 CE=1.368 | 59,528 tok/s grad=3.61 GPU=10.2G lr=1.15e-04 Var(w)=3.277 lam_w=0.000 ETA=50.2m
+Step   3220/5000 [WaveLM] | bpb=1.971 CE=1.366 | 59,532 tok/s grad=3.20 GPU=10.2G lr=1.13e-04 Var(w)=3.277 lam_w=0.000 ETA=49.6m
+Step   3240/5000 [WaveLM] | bpb=1.946 CE=1.349 | 59,525 tok/s grad=3.52 GPU=10.2G lr=1.12e-04 Var(w)=3.277 lam_w=0.000 ETA=49.0m
+  >>> VAL step 3250: 1.953 bits/byte
+  >>> new best 1.953 bpb -> best.pt
+Step   3260/5000 [WaveLM] | bpb=1.947 CE=1.350 | 51,675 tok/s grad=3.18 GPU=10.2G lr=1.10e-04 Var(w)=3.277 lam_w=0.000 ETA=48.5m
+Step   3280/5000 [WaveLM] | bpb=1.963 CE=1.361 | 59,527 tok/s grad=3.17 GPU=10.2G lr=1.08e-04 Var(w)=3.277 lam_w=0.000 ETA=48.0m
+Step   3300/5000 [WaveLM] | bpb=1.965 CE=1.362 | 59,528 tok/s grad=3.53 GPU=10.2G lr=1.07e-04 Var(w)=3.277 lam_w=0.000 ETA=47.4m
+Step   3320/5000 [WaveLM] | bpb=1.963 CE=1.360 | 59,528 tok/s grad=3.14 GPU=10.2G lr=1.05e-04 Var(w)=3.277 lam_w=0.000 ETA=46.8m
+Step   3340/5000 [WaveLM] | bpb=1.988 CE=1.378 | 59,526 tok/s grad=3.53 GPU=10.2G lr=1.04e-04 Var(w)=3.277 lam_w=0.000 ETA=46.3m
+Step   3360/5000 [WaveLM] | bpb=1.939 CE=1.344 | 59,529 tok/s grad=3.05 GPU=10.2G lr=1.02e-04 Var(w)=3.277 lam_w=0.000 ETA=45.7m
+Step   3380/5000 [WaveLM] | bpb=1.969 CE=1.365 | 59,528 tok/s grad=3.01 GPU=10.2G lr=1.00e-04 Var(w)=3.277 lam_w=0.000 ETA=45.2m
+Step   3400/5000 [WaveLM] | bpb=1.960 CE=1.359 | 59,528 tok/s grad=3.05 GPU=10.2G lr=9.88e-05 Var(w)=3.277 lam_w=0.000 ETA=44.6m
+Step   3420/5000 [WaveLM] | bpb=1.972 CE=1.367 | 59,528 tok/s grad=3.26 GPU=10.2G lr=9.72e-05 Var(w)=3.277 lam_w=0.000 ETA=44.0m
+Step   3440/5000 [WaveLM] | bpb=1.939 CE=1.344 | 59,530 tok/s grad=2.82 GPU=10.2G lr=9.57e-05 Var(w)=3.277 lam_w=0.000 ETA=43.5m
+Step   3460/5000 [WaveLM] | bpb=1.953 CE=1.354 | 59,526 tok/s grad=3.65 GPU=10.2G lr=9.42e-05 Var(w)=3.277 lam_w=0.000 ETA=42.9m
+Step   3480/5000 [WaveLM] | bpb=1.951 CE=1.352 | 59,532 tok/s grad=3.18 GPU=10.2G lr=9.27e-05 Var(w)=3.277 lam_w=0.000 ETA=42.4m
+Step   3500/5000 [WaveLM] | bpb=1.984 CE=1.375 | 59,526 tok/s grad=3.41 GPU=10.2G lr=9.12e-05 Var(w)=3.277 lam_w=0.000 ETA=41.8m
+  >>> VAL step 3500: 1.946 bits/byte
+  >>> new best 1.946 bpb -> best.pt
+Step   3520/5000 [WaveLM] | bpb=1.946 CE=1.349 | 51,673 tok/s grad=2.99 GPU=10.2G lr=8.97e-05 Var(w)=3.277 lam_w=0.000 ETA=41.3m
+Step   3540/5000 [WaveLM] | bpb=1.954 CE=1.354 | 59,528 tok/s grad=3.33 GPU=10.2G lr=8.82e-05 Var(w)=3.276 lam_w=0.000 ETA=40.7m
+Step   3560/5000 [WaveLM] | bpb=1.943 CE=1.347 | 59,528 tok/s grad=3.31 GPU=10.2G lr=8.67e-05 Var(w)=3.276 lam_w=0.000 ETA=40.1m
+Step   3580/5000 [WaveLM] | bpb=1.968 CE=1.364 | 59,525 tok/s grad=2.77 GPU=10.2G lr=8.53e-05 Var(w)=3.276 lam_w=0.000 ETA=39.6m
+Step   3600/5000 [WaveLM] | bpb=1.947 CE=1.350 | 59,528 tok/s grad=3.27 GPU=10.2G lr=8.39e-05 Var(w)=3.276 lam_w=0.000 ETA=39.0m
+Step   3620/5000 [WaveLM] | bpb=1.917 CE=1.329 | 59,531 tok/s grad=3.04 GPU=10.2G lr=8.24e-05 Var(w)=3.276 lam_w=0.000 ETA=38.5m
+Step   3640/5000 [WaveLM] | bpb=1.958 CE=1.357 | 59,526 tok/s grad=3.30 GPU=10.2G lr=8.10e-05 Var(w)=3.276 lam_w=0.000 ETA=37.9m
+Step   3660/5000 [WaveLM] | bpb=1.922 CE=1.332 | 59,532 tok/s grad=3.40 GPU=10.2G lr=7.96e-05 Var(w)=3.276 lam_w=0.000 ETA=37.3m
+Step   3680/5000 [WaveLM] | bpb=1.946 CE=1.349 | 59,527 tok/s grad=3.18 GPU=10.2G lr=7.83e-05 Var(w)=3.276 lam_w=0.000 ETA=36.8m
+Step   3700/5000 [WaveLM] | bpb=1.938 CE=1.343 | 59,525 tok/s grad=3.34 GPU=10.2G lr=7.69e-05 Var(w)=3.276 lam_w=0.000 ETA=36.2m
+Step   3720/5000 [WaveLM] | bpb=1.947 CE=1.349 | 59,531 tok/s grad=3.07 GPU=10.2G lr=7.56e-05 Var(w)=3.276 lam_w=0.000 ETA=35.7m
+Step   3740/5000 [WaveLM] | bpb=1.959 CE=1.358 | 59,528 tok/s grad=2.95 GPU=10.2G lr=7.42e-05 Var(w)=3.276 lam_w=0.000 ETA=35.1m
+  >>> VAL step 3750: 1.941 bits/byte
+  >>> new best 1.941 bpb -> best.pt
+Step   3760/5000 [WaveLM] | bpb=1.970 CE=1.366 | 51,677 tok/s grad=3.74 GPU=10.2G lr=7.29e-05 Var(w)=3.276 lam_w=0.000 ETA=34.6m
+Step   3780/5000 [WaveLM] | bpb=1.944 CE=1.347 | 59,523 tok/s grad=3.25 GPU=10.2G lr=7.16e-05 Var(w)=3.276 lam_w=0.000 ETA=34.0m
+Step   3800/5000 [WaveLM] | bpb=1.943 CE=1.347 | 59,527 tok/s grad=3.01 GPU=10.2G lr=7.03e-05 Var(w)=3.276 lam_w=0.000 ETA=33.5m
+Step   3820/5000 [WaveLM] | bpb=1.936 CE=1.342 | 59,530 tok/s grad=2.96 GPU=10.2G lr=6.91e-05 Var(w)=3.276 lam_w=0.000 ETA=32.9m
+Step   3840/5000 [WaveLM] | bpb=1.961 CE=1.359 | 59,524 tok/s grad=3.00 GPU=10.2G lr=6.78e-05 Var(w)=3.276 lam_w=0.000 ETA=32.3m
+Step   3860/5000 [WaveLM] | bpb=1.933 CE=1.340 | 59,520 tok/s grad=3.52 GPU=10.2G lr=6.66e-05 Var(w)=3.276 lam_w=0.000 ETA=31.8m
+Step   3880/5000 [WaveLM] | bpb=1.922 CE=1.332 | 59,520 tok/s grad=3.30 GPU=10.2G lr=6.54e-05 Var(w)=3.276 lam_w=0.000 ETA=31.2m
+Step   3900/5000 [WaveLM] | bpb=1.949 CE=1.351 | 59,519 tok/s grad=2.98 GPU=10.2G lr=6.42e-05 Var(w)=3.276 lam_w=0.000 ETA=30.7m
+Step   3920/5000 [WaveLM] | bpb=1.944 CE=1.348 | 59,528 tok/s grad=3.34 GPU=10.2G lr=6.30e-05 Var(w)=3.276 lam_w=0.000 ETA=30.1m
+Step   3940/5000 [WaveLM] | bpb=1.943 CE=1.347 | 59,528 tok/s grad=3.02 GPU=10.2G lr=6.18e-05 Var(w)=3.276 lam_w=0.000 ETA=29.5m
+Step   3960/5000 [WaveLM] | bpb=1.923 CE=1.333 | 59,527 tok/s grad=3.29 GPU=10.2G lr=6.07e-05 Var(w)=3.276 lam_w=0.000 ETA=29.0m
+Step   3980/5000 [WaveLM] | bpb=1.936 CE=1.342 | 59,529 tok/s grad=3.12 GPU=10.2G lr=5.96e-05 Var(w)=3.276 lam_w=0.000 ETA=28.4m
+Step   4000/5000 [WaveLM] | bpb=1.944 CE=1.347 | 59,528 tok/s grad=3.52 GPU=10.2G lr=5.85e-05 Var(w)=3.276 lam_w=0.000 ETA=27.9m
+  >>> VAL step 4000: 1.937 bits/byte
+  >>> new best 1.937 bpb -> best.pt
+Step   4020/5000 [WaveLM] | bpb=1.938 CE=1.343 | 51,673 tok/s grad=3.34 GPU=10.2G lr=5.74e-05 Var(w)=3.276 lam_w=0.000 ETA=27.3m
+Step   4040/5000 [WaveLM] | bpb=1.955 CE=1.355 | 59,528 tok/s grad=2.95 GPU=10.2G lr=5.63e-05 Var(w)=3.276 lam_w=0.000 ETA=26.8m
+Step   4060/5000 [WaveLM] | bpb=1.949 CE=1.351 | 59,531 tok/s grad=3.18 GPU=10.2G lr=5.53e-05 Var(w)=3.276 lam_w=0.000 ETA=26.2m
+Step   4080/5000 [WaveLM] | bpb=1.946 CE=1.349 | 59,525 tok/s grad=3.51 GPU=10.2G lr=5.42e-05 Var(w)=3.276 lam_w=0.000 ETA=25.6m
+Step   4100/5000 [WaveLM] | bpb=1.948 CE=1.350 | 59,527 tok/s grad=2.91 GPU=10.2G lr=5.32e-05 Var(w)=3.276 lam_w=0.000 ETA=25.1m
+Step   4120/5000 [WaveLM] | bpb=1.944 CE=1.347 | 59,530 tok/s grad=3.12 GPU=10.2G lr=5.22e-05 Var(w)=3.276 lam_w=0.000 ETA=24.5m
+Step   4140/5000 [WaveLM] | bpb=1.939 CE=1.344 | 59,527 tok/s grad=3.19 GPU=10.2G lr=5.13e-05 Var(w)=3.276 lam_w=0.000 ETA=24.0m
+Step   4160/5000 [WaveLM] | bpb=1.949 CE=1.351 | 59,527 tok/s grad=3.28 GPU=10.2G lr=5.03e-05 Var(w)=3.276 lam_w=0.000 ETA=23.4m
+Step   4180/5000 [WaveLM] | bpb=1.957 CE=1.356 | 59,527 tok/s grad=3.41 GPU=10.2G lr=4.94e-05 Var(w)=3.276 lam_w=0.000 ETA=22.9m
+Step   4200/5000 [WaveLM] | bpb=1.958 CE=1.357 | 59,526 tok/s grad=2.99 GPU=10.2G lr=4.85e-05 Var(w)=3.276 lam_w=0.000 ETA=22.3m
+Step   4220/5000 [WaveLM] | bpb=1.947 CE=1.350 | 59,519 tok/s grad=3.36 GPU=10.2G lr=4.76e-05 Var(w)=3.276 lam_w=0.000 ETA=21.7m
+Step   4240/5000 [WaveLM] | bpb=1.954 CE=1.354 | 59,511 tok/s grad=3.12 GPU=10.2G lr=4.67e-05 Var(w)=3.276 lam_w=0.000 ETA=21.2m
+  >>> VAL step 4250: 1.934 bits/byte
+  >>> new best 1.934 bpb -> best.pt
+Step   4260/5000 [WaveLM] | bpb=1.920 CE=1.331 | 51,671 tok/s grad=3.27 GPU=10.2G lr=4.58e-05 Var(w)=3.276 lam_w=0.000 ETA=20.6m
+Step   4280/5000 [WaveLM] | bpb=1.934 CE=1.341 | 59,530 tok/s grad=3.23 GPU=10.2G lr=4.50e-05 Var(w)=3.276 lam_w=0.000 ETA=20.1m
+Step   4300/5000 [WaveLM] | bpb=1.913 CE=1.326 | 59,519 tok/s grad=3.01 GPU=10.2G lr=4.42e-05 Var(w)=3.276 lam_w=0.000 ETA=19.5m
+Step   4320/5000 [WaveLM] | bpb=1.935 CE=1.341 | 59,530 tok/s grad=3.06 GPU=10.2G lr=4.34e-05 Var(w)=3.276 lam_w=0.000 ETA=19.0m
+Step   4340/5000 [WaveLM] | bpb=1.928 CE=1.336 | 59,524 tok/s grad=3.27 GPU=10.2G lr=4.27e-05 Var(w)=3.276 lam_w=0.000 ETA=18.4m
+Step   4360/5000 [WaveLM] | bpb=1.953 CE=1.354 | 59,521 tok/s grad=3.17 GPU=10.2G lr=4.19e-05 Var(w)=3.276 lam_w=0.000 ETA=17.8m
+Step   4380/5000 [WaveLM] | bpb=1.946 CE=1.349 | 59,522 tok/s grad=3.05 GPU=10.2G lr=4.12e-05 Var(w)=3.276 lam_w=0.000 ETA=17.3m
+Step   4400/5000 [WaveLM] | bpb=1.932 CE=1.339 | 59,523 tok/s grad=3.23 GPU=10.2G lr=4.05e-05 Var(w)=3.276 lam_w=0.000 ETA=16.7m
+Step   4420/5000 [WaveLM] | bpb=1.949 CE=1.351 | 59,528 tok/s grad=3.35 GPU=10.2G lr=3.98e-05 Var(w)=3.276 lam_w=0.000 ETA=16.2m
+Step   4440/5000 [WaveLM] | bpb=1.939 CE=1.344 | 59,529 tok/s grad=3.02 GPU=10.2G lr=3.92e-05 Var(w)=3.276 lam_w=0.000 ETA=15.6m
+Step   4460/5000 [WaveLM] | bpb=1.950 CE=1.352 | 59,528 tok/s grad=3.53 GPU=10.2G lr=3.85e-05 Var(w)=3.276 lam_w=0.000 ETA=15.0m
+Step   4480/5000 [WaveLM] | bpb=1.923 CE=1.333 | 59,522 tok/s grad=3.10 GPU=10.2G lr=3.79e-05 Var(w)=3.276 lam_w=0.000 ETA=14.5m
+Step   4500/5000 [WaveLM] | bpb=1.937 CE=1.343 | 59,525 tok/s grad=3.11 GPU=10.2G lr=3.73e-05 Var(w)=3.276 lam_w=0.000 ETA=13.9m
+  >>> VAL step 4500: 1.930 bits/byte
+  >>> new best 1.930 bpb -> best.pt
+Step   4520/5000 [WaveLM] | bpb=1.948 CE=1.351 | 51,678 tok/s grad=3.06 GPU=10.2G lr=3.67e-05 Var(w)=3.276 lam_w=0.000 ETA=13.4m
+Step   4540/5000 [WaveLM] | bpb=1.923 CE=1.333 | 59,528 tok/s grad=3.20 GPU=10.2G lr=3.62e-05 Var(w)=3.276 lam_w=0.000 ETA=12.8m
+Step   4560/5000 [WaveLM] | bpb=1.942 CE=1.346 | 59,529 tok/s grad=3.17 GPU=10.2G lr=3.57e-05 Var(w)=3.276 lam_w=0.000 ETA=12.3m
+Step   4580/5000 [WaveLM] | bpb=1.910 CE=1.324 | 59,528 tok/s grad=2.96 GPU=10.2G lr=3.52e-05 Var(w)=3.276 lam_w=0.000 ETA=11.7m
+Step   4600/5000 [WaveLM] | bpb=1.950 CE=1.351 | 59,526 tok/s grad=3.24 GPU=10.2G lr=3.47e-05 Var(w)=3.276 lam_w=0.000 ETA=11.1m
+Step   4620/5000 [WaveLM] | bpb=1.934 CE=1.341 | 59,531 tok/s grad=3.57 GPU=10.2G lr=3.42e-05 Var(w)=3.275 lam_w=0.000 ETA=10.6m
+Step   4640/5000 [WaveLM] | bpb=1.953 CE=1.354 | 59,527 tok/s grad=3.07 GPU=10.2G lr=3.38e-05 Var(w)=3.275 lam_w=0.000 ETA=10.0m
+Step   4660/5000 [WaveLM] | bpb=1.942 CE=1.346 | 59,531 tok/s grad=2.88 GPU=10.2G lr=3.34e-05 Var(w)=3.275 lam_w=0.000 ETA=9.5m
+Step   4680/5000 [WaveLM] | bpb=1.945 CE=1.348 | 59,526 tok/s grad=2.92 GPU=10.2G lr=3.30e-05 Var(w)=3.275 lam_w=0.000 ETA=8.9m
+Step   4700/5000 [WaveLM] | bpb=1.945 CE=1.348 | 59,528 tok/s grad=3.15 GPU=10.2G lr=3.26e-05 Var(w)=3.275 lam_w=0.000 ETA=8.4m
+Step   4720/5000 [WaveLM] | bpb=1.933 CE=1.340 | 59,528 tok/s grad=3.32 GPU=10.2G lr=3.23e-05 Var(w)=3.275 lam_w=0.000 ETA=7.8m
+Step   4740/5000 [WaveLM] | bpb=1.935 CE=1.341 | 59,530 tok/s grad=3.16 GPU=10.2G lr=3.20e-05 Var(w)=3.275 lam_w=0.000 ETA=7.2m
+  >>> VAL step 4750: 1.929 bits/byte
+  >>> new best 1.929 bpb -> best.pt
+Step   4760/5000 [WaveLM] | bpb=1.920 CE=1.331 | 51,672 tok/s grad=3.11 GPU=10.2G lr=3.17e-05 Var(w)=3.275 lam_w=0.000 ETA=6.7m
+Step   4780/5000 [WaveLM] | bpb=1.932 CE=1.339 | 59,527 tok/s grad=3.34 GPU=10.2G lr=3.14e-05 Var(w)=3.275 lam_w=0.000 ETA=6.1m
+Step   4800/5000 [WaveLM] | bpb=1.922 CE=1.332 | 59,527 tok/s grad=3.10 GPU=10.2G lr=3.12e-05 Var(w)=3.275 lam_w=0.000 ETA=5.6m
+Step   4820/5000 [WaveLM] | bpb=1.957 CE=1.357 | 59,528 tok/s grad=3.27 GPU=10.2G lr=3.10e-05 Var(w)=3.275 lam_w=0.000 ETA=5.0m
+Step   4840/5000 [WaveLM] | bpb=1.930 CE=1.338 | 59,531 tok/s grad=3.21 GPU=10.2G lr=3.08e-05 Var(w)=3.275 lam_w=0.000 ETA=4.5m
+Step   4860/5000 [WaveLM] | bpb=1.941 CE=1.345 | 59,529 tok/s grad=3.02 GPU=10.2G lr=3.06e-05 Var(w)=3.275 lam_w=0.000 ETA=3.9m
+Step   4880/5000 [WaveLM] | bpb=1.946 CE=1.349 | 59,529 tok/s grad=3.13 GPU=10.2G lr=3.04e-05 Var(w)=3.275 lam_w=0.000 ETA=3.3m
+Step   4900/5000 [WaveLM] | bpb=1.930 CE=1.338 | 59,527 tok/s grad=3.02 GPU=10.2G lr=3.03e-05 Var(w)=3.275 lam_w=0.000 ETA=2.8m
+Step   4920/5000 [WaveLM] | bpb=1.911 CE=1.325 | 59,530 tok/s grad=3.07 GPU=10.2G lr=3.02e-05 Var(w)=3.275 lam_w=0.000 ETA=2.2m
+Step   4940/5000 [WaveLM] | bpb=1.943 CE=1.347 | 59,526 tok/s grad=3.49 GPU=10.2G lr=3.01e-05 Var(w)=3.275 lam_w=0.000 ETA=1.7m
+Step   4960/5000 [WaveLM] | bpb=1.934 CE=1.341 | 59,528 tok/s grad=3.22 GPU=10.2G lr=3.00e-05 Var(w)=3.275 lam_w=0.000 ETA=1.1m
+Step   4980/5000 [WaveLM] | bpb=1.930 CE=1.338 | 59,528 tok/s grad=3.08 GPU=10.2G lr=3.00e-05 Var(w)=3.275 lam_w=0.000 ETA=0.6m
+Step   5000/5000 [WaveLM] | bpb=1.920 CE=1.331 | 59,524 tok/s grad=2.96 GPU=10.2G lr=3.00e-05 Var(w)=3.275 lam_w=0.000 ETA=0.0m
+  >>> VAL step 5000: 1.927 bits/byte
+  >>> new best 1.927 bpb -> best.pt
+==============================================================================
+  DONE 5000 steps in 139.4m  best val 1.927 bpb
+==============================================================================

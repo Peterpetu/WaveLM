@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "T": 512,
+    "batch": 32,
+    "steps": 2500,
+    "n_sub": 12,
+    "mix_every": 2,
+    "delta": 2,
+    "device": "cuda",
+    "bytes_per_run": 40960000,
+    "started": "2026-05-24 03:08:45",
+    "finished": "2026-05-24 03:08:49"
+  },
+  "runs": [
+    {
+      "label": "REF_d128_s0_lr0.003",
+      "arch": "wavelm",
+      "params_dof": 115331,
+      "steps_target": 30,
+      "steps_done": 30,
+      "batch": 32,
+      "T": 512,
+      "lr": 0.003,
+      "seed": 0,
+      "tokens": 491520,
+      "val_bpb_final": 4.3903,
+      "val_bpb_best": 4.3903,
+      "wall_s": 2.3,
+      "tok_per_s": 218128.0,
+      "peak_gb": 1.5,
+      "history": [
+        [
+          30,
+          4.3903
+        ]
+      ],
+      "variant": "REF",
+      "d": 128,
+      "note": "conv+mix+sat+phase+norm+Born",
+      "oom_retry": false
+    },
+    {
+      "label": "ablate_phase_d128_s0_lr0.003",
+      "arch": "wavelm",
+      "params_dof": 115331,
+      "steps_target": 30,
+      "steps_done": 30,
+      "batch": 32,
+      "T": 512,
+      "lr": 0.003,
+      "seed": 0,
+      "tokens": 491520,
+      "val_bpb_final": 4.4204,
+      "val_bpb_best": 4.4204,
+      "wall_s": 1.5,
+      "tok_per_s": 321639.0,
+      "peak_gb": 1.31,
+      "history": [
+        [
+          30,
+          4.4204
+        ]
+      ],
+      "variant": "ablate_phase",
+      "d": 128,
+      "note": "omega=0",
+      "oom_retry": false
+    }
+  ]
+}

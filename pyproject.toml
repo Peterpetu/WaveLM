@@ -1,0 +1,27 @@
+[project]
+name = "wavelm"
+version = "1.0.0"
+description = "WaveLM: a complex-valued byte-level language model, its matched byte-transformer baseline, and the ablation study that measured what actually drives it"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = [
+    "torch>=2.5.0",
+    "numpy>=1.26",
+    "tqdm>=4.66",
+    "datasets>=2.21",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8.0"]
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["wave*", "baselines*", "tools*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+filterwarnings = ["ignore::DeprecationWarning", "ignore::UserWarning:torch.*"]
