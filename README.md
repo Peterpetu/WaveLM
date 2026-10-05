@@ -65,6 +65,21 @@ python scripts/ablation_study.py && python scripts/analyze_ablation.py   # the d
 
 Hardware for every number here: one RTX 4080 SUPER (16 GB).
 
-## License
+## License and citation
 
-MIT.
+The code and any released weights are licensed under the Apache License 2.0 (`LICENSE`); the documentation, figures and data under CC BY 4.0. Both require attribution: a copy or derivative of the code keeps the `NOTICE` file, and any reuse of the text, figures or data credits the author and links to the source.
+
+If you use this work, build on it, or report results obtained with it, cite it:
+
+> Lahtinen, P. (2026). *WaveLM: a complex-valued byte-level language model and the ablation study of what drives it.* https://github.com/Peterpetu/WaveLM
+
+```bibtex
+@misc{lahtinen2026wavelm,
+  author = {Lahtinen, Peter},
+  title  = {WaveLM: a complex-valued byte-level language model and the ablation study of what drives it},
+  year   = {2026},
+  url    = {https://github.com/Peterpetu/WaveLM}
+}
+```
+
+`CITATION.cff` carries the same reference for GitHub's "Cite this repository" button and for reference managers.
